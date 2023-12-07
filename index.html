@@ -45,14 +45,49 @@
           </div>
         </div>
 
+        <!-- Main page: main game page. This page will be hidden at the beginning
+        while instructions page is being displayed -->
+        <div id="game-page" class="page hide">
 
+          <!-- Status section. This will show the score of the player -->
+          <div class="status">
+            <span id="dogs-found">Dogs found: <span id="correct-answer">0</span>
+            </span>
+            <span id="dogs-lost">Dogs lost: <span id="wrong-answer">0</span>
+            </span>
+          </div>
 
-
+          <!-- Quiz questions here -->
+          <div id="question" class="question">
+            Questions?
+          </div>
+          <!-- Multiple answers here. 4 buttons = 4 options per question -->
+          <div id="option-buttons">
+            <button class="option-btn">Option 1</button>
+            <button class="option-btn">Option 2</button>
+            <button class="option-btn">Option 3</button>
+            <button class="option-btn">Option 4</button>
+          </div>
+          <!-- Trivia section: This section shows up when user chooses an answer 
+            to confirm whether user chose the correct or wrong answer, 
+            afterwards, a trivia or explanation is displayed -->
+          <div id="correct-wrong" class="correct-wrong hide">
+            <h2>You found a dog!</h2>
+          </div>
+          <div id="trivia" class="trivia hide">
+            <p>Dog’s nose, when combined with the shape of its nostril openings,
+               is believed to make a mark that is distinctive enough to 
+               conclusively identify one dog among all others.</p>
+          </div>
+          <!-- Next question button -->
+          <div>
+            <button id="next-question-btn" class="next-question-btn hide btn">
+              Hurry! Find more dogs!
+            </button>
+          </div>
+        </div>
     </main>
     
-
-
-
     <!-- JavaScript file-->
     <script src="assets/js/script.js"></script>
   </body>
