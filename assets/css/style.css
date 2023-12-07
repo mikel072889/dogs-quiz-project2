@@ -1,0 +1,20 @@
+/* Google font import */
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+/* Colors root */
+:root {
+    --cream:#F4EBD0;
+    --gold:#D6AD60;
+    --charcoal:#122620;
+    --tan:#B68D40;
+}
+
+/* General styles */
+
+body {
+    background-color: var(--cream);
+    text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 20px;
+    line-height: 1.5rem;
+}
