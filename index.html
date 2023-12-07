@@ -8,86 +8,112 @@
     <!-- Webpage Title -->
     <title>Who Let The Dogs Out?</title>
     <!-- Meta tags for search engines -->
-    <meta name="description" content="Dogs quiz. Quiz game about dogs, dog breeds">
-    <meta name="keywords" content="dogs, animals, quiz, quizzes, games, canines,
-        pets, petlovers, doglovers, animal lover, dog breeds">
+    <meta
+      name="description"
+      content="Dogs quiz. Quiz game about dogs, dog breeds"
+    >
+    <meta
+      name="keywords"
+      content="dogs, animals, quiz, quizzes, games, canines,
+        pets, petlovers, doglovers, animal lover, dog breeds"
+    >
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    >
     <link rel="manifest" href="assets/favicon/site.webmanifest">
   </head>
 
   <body>
     <main>
-        <!-- Header of the main page, includes title of the quiz game -->
-        <header id="header-image">
-          <img src="assets/images/dogs-heading.png" alt="Group of dogs">
-          <h1>Who Let The Dogs Out?</h1>
-        </header>
-        
-        <!-- Two pages of the quiz: story/instructions page & main game page -->
-        <!-- Initial page: Story/Instructions -->
-        <div id="instructions-page" class="page">
-          <p>Your family runs a kennel in the outskirts of Manchester. Today, you were
-            left in-charge of the place. Your kennel is currently housing 30 adorable
-            dogs. Unfortunately, somebody left the main door open this morning and all
-            of the 30 cute dogs managed to escape!
-          </p>
-          <p>You now need to find those dogs by answering all the questions in this
-            quiz game. One correct answer is equivalent to one dog being found.
-          </p>
-          <p>Will you manage to find them all? Let's see how many dogs you can find!
-            Otherwise, we'll get RSPCA involved! 
-          </p>
-          <div>
-            <button id="start-quiz-btn" class="btn start-quiz-btn">Let's find some dogs!</button>
-          </div>
+      <!-- Header of the main page, includes title of the quiz game -->
+      <header id="header-image">
+        <img src="assets/images/dogs-heading.png" alt="Group of dogs">
+        <h1>Who Let The Dogs Out?</h1>
+      </header>
+
+      <!-- Two pages of the quiz: story/instructions page & main game page -->
+      <!-- Initial page: Story/Instructions -->
+      <div id="instructions-page" class="page">
+        <p>
+          Your family runs a kennel in the outskirts of Manchester. Today, you
+          were left in-charge of the place. Your kennel is currently housing 30
+          adorable dogs. Unfortunately, somebody left the main door open this
+          morning and all of the 30 cute dogs managed to escape!
+        </p>
+        <p>
+          You now need to find those dogs by answering all the questions in this
+          quiz game. One correct answer is equivalent to one dog being found.
+        </p>
+        <p>
+          Will you manage to find them all? Let's see how many dogs you can find
+          if not all! Otherwise, we'll get the RSPCA involved!
+        </p>
+        <div>
+          <button id="start-quiz-btn" class="btn start-quiz-btn">
+            Let's go find your dogs!
+          </button>
+        </div>
+      </div>
+
+      <!-- Main page: main game page. This page will be hidden at the beginning
+        while instructions page is being displayed -->
+      <div id="game-page" class="page hide">
+        <!-- Status section. This will show the score of the player -->
+        <div class="status">
+          <span id="dogs-found"
+            >Dogs found: <span id="correct-answer">0</span>
+          </span>
+          <span id="dogs-lost"
+            >Dogs lost: <span id="wrong-answer">0</span>
+          </span>
         </div>
 
-        <!-- Main page: main game page. This page will be hidden at the beginning
-        while instructions page is being displayed -->
-        <div id="game-page" class="page hide">
-
-          <!-- Status section. This will show the score of the player -->
-          <div class="status">
-            <span id="dogs-found">Dogs found: <span id="correct-answer">0</span>
-            </span>
-            <span id="dogs-lost">Dogs lost: <span id="wrong-answer">0</span>
-            </span>
-          </div>
-
-          <!-- Quiz questions here -->
-          <div id="question" class="question">
-            Questions?
-          </div>
-          <!-- Multiple answers here. 4 buttons = 4 options per question -->
-          <div id="option-buttons">
-            <button class="option-btn">Option 1</button>
-            <button class="option-btn">Option 2</button>
-            <button class="option-btn">Option 3</button>
-            <button class="option-btn">Option 4</button>
-          </div>
-          <!-- Trivia section: This section shows up when user chooses an answer 
+        <!-- Quiz questions here -->
+        <div id="question" class="question">Questions?</div>
+        <!-- Multiple answers here. 4 buttons = 4 options per question -->
+        <div id="option-buttons">
+          <button class="option-btn">Option 1</button>
+          <button class="option-btn">Option 2</button>
+          <button class="option-btn">Option 3</button>
+          <button class="option-btn">Option 4</button>
+        </div>
+        <!-- Trivia section: This section shows up when user chooses an answer 
             to confirm whether user chose the correct or wrong answer, 
             afterwards, a trivia or explanation is displayed -->
-          <div id="correct-wrong" class="correct-wrong hide">
-            <h2>You found a dog!</h2>
-          </div>
-          <div id="trivia" class="trivia hide">
-            <p>Dog’s nose, when combined with the shape of its nostril openings,
-               is believed to make a mark that is distinctive enough to 
-               conclusively identify one dog among all others.</p>
-          </div>
-          <!-- Next question button -->
-          <div>
-            <button id="next-question-btn" class="next-question-btn hide btn">
-              Hurry! Find more dogs!
-            </button>
-          </div>
+        <div id="correct-wrong" class="correct-wrong hide">
+          <h2>You found a dog!</h2>
         </div>
+        <div id="trivia" class="trivia hide">
+          <p>
+            Dog’s nose, when combined with the shape of its nostril openings, is
+            believed to make a mark that is distinctive enough to conclusively
+            identify one dog among all others.
+          </p>
+        </div>
+        <!-- Next question button -->
+        <div>
+          <button id="next-question-btn" class="next-question-btn hide btn">
+            Hurry! Find more dogs!
+          </button>
+        </div>
+      </div>
     </main>
-    
+
     <!-- JavaScript file-->
     <script src="assets/js/script.js"></script>
   </body>
