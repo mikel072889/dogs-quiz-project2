@@ -73,6 +73,10 @@ img {
     margin-top: 25px;
 }
 
+.hide {
+    display: none;
+}
+
 /* Question page styling */
 #question {
     background-color: var(--charcoal);
