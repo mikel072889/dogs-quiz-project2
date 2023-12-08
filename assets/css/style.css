@@ -155,6 +155,7 @@ button:hover {
 
     .page {
         width: 72%;
+        margin-bottom: 20px;
     }
 
     h1 {
@@ -168,6 +169,26 @@ button:hover {
         margin-top: 50px;
 }
 }
- 
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    body {
+        line-height: 1.7rem;
+        font-size: 20px;
+    }
+
+    img {
+        width: 70%;
+    }
+
+    .page {
+        width: 64%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 8px;
+    }
+}   
 
 
