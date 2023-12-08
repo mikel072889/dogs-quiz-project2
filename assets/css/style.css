@@ -7,6 +7,8 @@
     --gold:#D6AD60;
     --charcoal:#122620;
     --tan:#B68D40;
+    --lightblue:#ADD8E6;
+    --lightyellow: #FFEE75;
 }
 
 /* General styles */
@@ -22,8 +24,9 @@ body {
 h1 {
     color: var(--charcoal);
     margin-top: 30px;
-    margin-bottom: 40px;
-    letter-spacing: 5px;
+    margin-bottom: 30px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -49,10 +52,12 @@ img {
 
 .correct {
     float: left;
+    color: green;
 }
 
 .wrong {
     float: right;
+    color: red;
 }
 
 .question {
@@ -60,6 +65,15 @@ img {
     margin-bottom: 20px;
 }
 
+.status {
+    text-transform: uppercase;
+}
+
+.correct-wrong {
+    margin-top: 25px;
+}
+
+/* Question page styling */
 #question {
     background-color: var(--charcoal);
     border-radius: 25px;
@@ -68,4 +82,45 @@ img {
     width: 90%;
     color: var(--cream);
 }
+
+/* Buttons styling */ 
+/* General buttons styling */
+button {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 100%;
+    padding: 10px;
+    border: solid 4px var(--charcoal);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--lightyellow);
+}
+
+/* Options/Answers buttons styling */
+.option-btn {
+    width: 90%;
+    margin: 8px;
+}
+
+.option-btn:hover {
+    background: var(--lightblue);
+    padding-right: 25px;
+}
+
+/* Button effect still unknown 
+.option-btn:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+*/
+
+
+
+
 
