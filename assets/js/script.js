@@ -258,6 +258,8 @@ let currentDogsFound = document.getElementById("correct-answer");
 let dogsLost = 0;
 let currentDogsLost = document.getElementById("wrong-answer");
 const userAnswerResult = document.getElementById("correct-wrong");
+const sadDog = document.getElementById("sad-dog");
+const happyDog = document.getElementById("happy-dog");
 const trivia = document.getElementById("trivia");
 const startQuizButton = document.getElementById("start-quiz-btn");
 const instructionsPage = document.getElementById("instructions-page");
@@ -295,10 +297,12 @@ function startQuiz() {
     displayQuestion(); 
 }
 /**
- * Displays the question derived from the questions array variable
+ * Displays the questions and options derived from the questions array variable
  */
 function displayQuestion() {
     hideDefaultOptionsButtons();
+    trivia.classList.add("hide");
+    nextQuestionButton.classList.add("hide");
     let currentQuestion = questions[questionsArrayIndex];
     question.innerHTML = currentQuestion.question;
     currentQuestion.options.forEach(function (answer, index) {
@@ -335,12 +339,16 @@ function checkAnswer(e) {
 
     if (clickedOption.innerHTML === currentQuestion.correctAnswer) {
         clickedOption.classList.add("correct-answer");
+        userAnswerResult.innerHTML = "YOU FOUND A DOG!";
+        happyDog.classList.remove("hide");
         dogsFound++;
         currentDogsFound.innerHTML = `${dogsFound}`;
-        userAnswerResult.innerHTML = "YOU FOUND A DOG!";
     } else {
         clickedOption.classList.add("wrong-answer");
         userAnswerResult.innerHTML = "OOOPPS! YOU LOST ONE DOG!";
+        sadDog.classList.remove("hide");
+        dogsLost++;
+        currentDogsLost.innerHTML = `${dogsLost}`;
     }
 
     Array.from(optionButtons.children).forEach(button => {

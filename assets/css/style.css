@@ -141,12 +141,22 @@ button:hover {
 */
 
 /* GIF image styling - image appears when user selects and option */
-.dancing-dog {
+.dancing-dog  {
     flex: display;
     align-items: center;
     border: solid 3px var(--charcoal);
-    width: 35%;
+    width: 30%;
     border-radius: 50%;
+    margin-top: 20px;
+}
+
+.sad-dog {
+    flex: display;
+    align-items: center;
+    border: solid 3px var(--charcoal);
+    width: 30%;
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
 /* Media query: tablets and larger (768px and up) */
