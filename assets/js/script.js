@@ -262,11 +262,44 @@ const trivia = document.getElementById("trivia");
 const startQuizButton = document.getElementById("start-quiz-btn");
 const instructionsPage = document.getElementById("instructions-page");
 const quizPage = document.getElementById("game-page");
-const header = getElementByTagName("header");
+const header = document.getElementById("header-image");
 
 // Calls to go to the story/instructions page: initial page of the quiz
 // Only the story/instructions page will be displayed initially
-header.addEventListener ("click", () => {
+header.addEventListener("click", () => {
     quizPage.classList.add("hide");
     instructionsPage.classList.remove("hide");
 }); 
+
+// Calls to start quiz
+startQuizButton.addEventListener("click", () => {
+    startQuiz();
+});
+
+
+
+/**
+ * Start the quiz from the first question with 0 score 
+ */
+function startQuiz() {
+    questionsArrayIndex = 0;
+    dogsFound = 0;
+    currentDogsFound.innerHTML = 0;
+    dogsLost = 0;
+    currentDogsLost.innerHTML = 0;
+    nextQuestionButton.innerHTML = "Hurry! Find more dogs!";
+    quizPage.classList.remove("hide");
+    instructionsPage.classList.add("hide");
+    displayQuestion(); 
+}
+
+function displayQuestion() {
+    let currentQuestion = questions[questionsArrayIndex];
+    question.innerHTML = currentQuestion.question;
+    currentQuestion.options.forEach(function (answer, index) {
+        const button = createElement("button");
+        button.innerHTML = answer;
+        optionButtons.appendChild(button);
+        button.classList.add(option-btn)
+    });
+}
