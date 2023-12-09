@@ -1,3 +1,5 @@
+// Constant variable containing an array of quiz questions and their respective
+// answers and trivias
 const questions = [
     {
         question: "What part of a dog is as unique as a human fingerprint?",
@@ -245,3 +247,19 @@ const questions = [
                  they can still growl!"
     },
 ];
+
+// Required main variables
+const question = document.getElementById("question");
+const optionButtons = document.getElementById("option-buttons");
+let questionsArrayIndex = 0;
+const nextQuestionButton = document.getElementById("next-question-btn");
+let dogsFound = 0;
+let currentDogsFound = document.getElementById("correct-answer");
+let dogsLost = 0;
+let currentDogsLost = document.getElementById("wrong-answer");
+const userAnswerResult = document.getElementById("correct-wrong");
+const trivia = document.getElementById("trivia");
+const startQuizButton = document.getElementById("start-quiz-btn");
+const instructionsPage = document.getElementById("instructions-page");
+const quizPage = document.getElementById("game-page");
+const header = getElementByTagName("header");
