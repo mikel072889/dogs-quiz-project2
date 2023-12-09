@@ -301,17 +301,28 @@ function startQuiz() {
  */
 function displayQuestion() {
     hideDefaultOptionsButtons();
+
+    // Hides the trivia section before user chooses answer
     trivia.classList.add("hide");
+
+    // Hides the next question button before user chooses an answer
     nextQuestionButton.classList.add("hide");
+
     let currentQuestion = questions[questionsArrayIndex];
+
+    // Displays current question
     question.innerHTML = currentQuestion.question;
+    // Calls all options from the options array using forEach method
     currentQuestion.options.forEach(function (answer, index) {
+        // New buttons created for each option (Replaced default buttons)
         const button = document.createElement("button");
         button.innerHTML = answer;
         optionButtons.appendChild(button);
+        // Retrieves the original button styling from css
         button.classList.add("option-btn")
     });
 
+    // Calls checkAnswer() once user chose an option by clicking
     optionButtons.addEventListener("click", checkAnswer);
 }
 
@@ -332,8 +343,11 @@ function hideDefaultOptionsButtons() {
  */
 function checkAnswer(e) {
     const clickedOption = e.target;
+    // Displays user answer result 
     userAnswerResult.classList.remove("hide");
+    // Displays trivia about the question/answer
     trivia.classList.remove("hide");
+
     let currentQuestion = questions[questionsArrayIndex];
     trivia.innerHTML = currentQuestion.trivia;
 
@@ -357,4 +371,7 @@ function checkAnswer(e) {
         }
         button.disabled = true;
     });
+
+    // Displays the button for the next question once user has chosen an answer
+    nextQuestionButton.classList.remove("hide");
 }
