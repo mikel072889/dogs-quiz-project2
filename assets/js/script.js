@@ -263,3 +263,10 @@ const startQuizButton = document.getElementById("start-quiz-btn");
 const instructionsPage = document.getElementById("instructions-page");
 const quizPage = document.getElementById("game-page");
 const header = getElementByTagName("header");
+
+// Calls to go to the story/instructions page: initial page of the quiz
+// Only the story/instructions page will be displayed initially
+header.addEventListener ("click", () => {
+    quizPage.classList.add("hide");
+    instructionsPage.classList.remove("hide");
+}); 
