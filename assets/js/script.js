@@ -369,9 +369,41 @@ function checkAnswer(e) {
         if (button.innerHTML === currentQuestion.correctAnswer) {
             button.classList.add("correct-answer");
         }
+
+        // Disallows user to choose another answer after clicking an option
         button.disabled = true;
     });
 
     // Displays the button for the next question once user has chosen an answer
     nextQuestionButton.classList.remove("hide");
 }
+
+/**
+ * Code to display the following question, one after another
+ */
+function handleNextQuestionButton () {
+    questionsArrayIndex++;
+    if (questionsArrayIndex < questions.length) {
+        displayQuestion();
+        // Re-hide the previous question's trivia and dog GIF
+        userAnswerResult.classList.add("hide");
+        trivia.classList.add("hide");
+        happyDog.classList.add("hide");
+        sadDog.classList.add("hide");
+    } else {
+        // Code to be developed yet
+        displayDogsRecued()
+    };
+}
+
+// Previous code won't work without this eventListener
+// This code will also keep displaying questions until all questions have been 
+// answered
+nextQuestionButton.addEventListener("click", () => {
+    if (questionsArrayIndex < questions.length) {
+        handleNextQuestionButton();
+    } else {
+        // Restarts the quiz all over again
+        startQuiz();
+    }
+});
