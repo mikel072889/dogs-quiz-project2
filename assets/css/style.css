@@ -57,6 +57,14 @@ img {
     color: green;
 }
 
+.correct-answer {
+    background: green;
+}
+
+.wrong-answer {
+    background: red;
+}
+
 .wrong {
     float: right;
     color: red;

@@ -307,6 +307,8 @@ function displayQuestion() {
         optionButtons.appendChild(button);
         button.classList.add("option-btn")
     });
+
+    optionButtons.addEventListener("click", checkAnswer);
 }
 
 // These codes were extracted from Youtube 
@@ -319,4 +321,32 @@ function hideDefaultOptionsButtons() {
     while (optionButtons.firstChild) {
         optionButtons.removeChild(optionButtons.firstChild);
     }
+}
+
+/** Checks user's answer and identifies whether clicked option is 
+ * the correct/wrong answer
+ */
+function checkAnswer(e) {
+    const clickedOption = e.target;
+    userAnswerResult.classList.remove("hide");
+    trivia.classList.remove("hide");
+    let currentQuestion = questions[questionsArrayIndex];
+    trivia.innerHTML = currentQuestion.trivia;
+
+    if (clickedOption.innerHTML === currentQuestion.correctAnswer) {
+        clickedOption.classList.add("correct-answer");
+        dogsFound++;
+        currentDogsFound.innerHTML = `${dogsFound}`;
+        userAnswerResult.innerHTML = "YOU FOUND A DOG!";
+    } else {
+        clickedOption.classList.add("wrong-answer");
+        userAnswerResult.innerHTML = "OOOPPS! YOU LOST ONE DOG!";
+    }
+
+    Array.from(optionButtons.children).forEach(button => {
+        if (button.innerHTML === currentQuestion.correctAnswer) {
+            button.classList.add("correct-answer");
+        }
+        button.disabled = true;
+    });
 }
