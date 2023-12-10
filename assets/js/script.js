@@ -266,6 +266,7 @@ const startQuizButton = document.getElementById("start-quiz-btn");
 const instructionsPage = document.getElementById("instructions-page");
 const quizPage = document.getElementById("game-page");
 const header = document.getElementById("header-image");
+const backToInstructions = document.getElementById("back-to-instructions")
 
 // Calls to go to the story/instructions page: initial page of the quiz
 // Only the story/instructions page will be displayed initially
@@ -293,6 +294,7 @@ function startQuiz() {
     // Codes for which game page to display
     quizPage.classList.remove("hide");
     instructionsPage.classList.add("hide");
+    backToInstructions.classList.add("hide")
     displayQuestion(); 
 }
 
@@ -307,6 +309,9 @@ function displayQuestion() {
 
     // Hides the next question button before user chooses an answer
     nextQuestionButton.classList.add("hide");
+
+    // Hides button that takes you back to instructions after playing quiz
+    backToInstructions.classList.add("hide")
 
     let currentQuestion = questions[questionsArrayIndex];
 
@@ -347,6 +352,7 @@ function checkAnswer(e) {
     userAnswerResult.classList.remove("hide");
     // Displays trivia about the question/answer
     trivia.classList.remove("hide");
+    backToInstructions.classList.add("hide")
 
     let currentQuestion = questions[questionsArrayIndex];
     trivia.innerHTML = currentQuestion.trivia;
@@ -424,9 +430,15 @@ function displayDogsRescued() {
         question.innerHTML = `Way to go! You retrieved ${dogsFound} dogs! You
                                 are a certified dog guru!`
     } 
-
+    
+    backToInstructions.classList.remove("hide");
     nextQuestionButton.innerHTML = "Retake Quiz";
 }
+
+backToInstructions.addEventListener("click", () => {
+    quizPage.classList.add("hide");
+    instructionsPage.classList.remove("hide");
+});
 
 // Previous code won't work without this eventListener
 // This code will also keep displaying questions until all questions have been 

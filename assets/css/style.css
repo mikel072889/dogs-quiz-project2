@@ -96,6 +96,16 @@ img {
     padding: 20px;
 }
 
+/* Back to instruction div(button) styling */
+#back-to-instructions {
+    background-color: var(--charcoal);
+    border-radius: 25px;
+    color: var(--cream);
+    padding: 2px;
+    margin-bottom: 20px;
+    width: 35%;
+}
+
 #trivia {
     background-color: var(--lightblue);
     margin-top: 30px;
