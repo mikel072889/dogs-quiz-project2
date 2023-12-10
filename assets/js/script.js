@@ -268,7 +268,7 @@ const startQuizButton = document.getElementById("start-quiz-btn");
 const instructionsPage = document.getElementById("instructions-page");
 const quizPage = document.getElementById("game-page");
 const header = document.getElementById("header-image");
-const backToInstructions = document.getElementById("back-to-instructions")
+const backToInstructions = document.getElementById("back-to-instructions");
 
 // Calls to go to the story/instructions page: initial page of the quiz
 // Only the story/instructions page will be displayed initially
@@ -296,7 +296,7 @@ function startQuiz() {
     // Codes for which game page to display
     quizPage.classList.remove("hide");
     instructionsPage.classList.add("hide");
-    backToInstructions.classList.add("hide")
+    backToInstructions.classList.add("hide");
     displayQuestion(); 
 }
 
@@ -313,7 +313,7 @@ function displayQuestion() {
     nextQuestionButton.classList.add("hide");
 
     // Hides button that takes you back to instructions after playing quiz
-    backToInstructions.classList.add("hide")
+    backToInstructions.classList.add("hide");
 
     let currentQuestion = questions[questionsArrayIndex];
 
@@ -326,7 +326,7 @@ function displayQuestion() {
         button.innerHTML = answer;
         optionButtons.appendChild(button);
         // Retrieves the original button styling from css
-        button.classList.add("option-btn")
+        button.classList.add("option-btn");
     });
 
     // Calls checkAnswer() once user chose an option by clicking
@@ -354,7 +354,7 @@ function checkAnswer(e) {
     userAnswerResult.classList.remove("hide");
     // Displays trivia about the question/answer
     trivia.classList.remove("hide");
-    backToInstructions.classList.add("hide")
+    backToInstructions.classList.add("hide");
 
     let currentQuestion = questions[questionsArrayIndex];
     trivia.innerHTML = currentQuestion.trivia;
@@ -402,8 +402,8 @@ function handleNextQuestionButton () {
         sadDog.classList.add("hide");
     } else {
         // Code to be developed yet
-        displayDogsRescued()
-    };
+        displayDogsRescued();
+    }
 }
 
 function displayDogsRescued() {
