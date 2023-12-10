@@ -27,7 +27,7 @@ const questions = [
     {
         question: "What part of the body does a dog sweat from?",
         options: ["Stomach", "Back", "Paws", "Tail"],
-        correctAnswer: "Nose",
+        correctAnswer: "Paws",
         trivia: "Instead of sweat sweeping down their face, most dog sweat \
                  is released through glands in the paw pads."
     },
