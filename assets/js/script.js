@@ -40,8 +40,9 @@ const questions = [
     },
     {
         question: "What is the average lifespan of a dog?",
-        options: ["13-16 years", "10–13 years", "8–9 years", "12–15 years"],
-        correctAnswer: "10-13 years",
+        options: ["13 to 16 years", "10 to 13 years", "8 to 9 \
+                   years", "12 to 15 years"],
+        correctAnswer: "10 to 13 years",
         trivia: "Your furry friend’s lifespan depends on size and breed, \
                  but on the average, dogs have a lifespan of 10 – 13 years."
     },
