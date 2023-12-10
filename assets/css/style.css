@@ -196,21 +196,21 @@ button:hover {
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     body {
-        line-height: 1.7rem;
+        line-height: 1.2rem;
         font-size: 20px;
     }
 
     img {
-        width: 70%;
+        width: 50%;
     }
 
     .page {
-        width: 64%;
+        width: 45%;
     }
 
     h1 {
-        font-size: 2.5rem;
-        letter-spacing: 8px;
+        font-size: 2rem;
+        letter-spacing: 5px;
     }
 }   
 
