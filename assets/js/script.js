@@ -1,6 +1,7 @@
 // Constant variable containing an array of quiz questions and their respective
 // answers and trivias
 /*jshint multistr: true */
+/*jshint esversion: 6 */
 const questions = [
     {
         question: "What part of a dog is as unique as a human fingerprint?",
