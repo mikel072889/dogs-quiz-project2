@@ -153,8 +153,8 @@ const questions = [
     },
     {
         question: "Which dog breed is the most popular in the United States?",
-        options: ["Golden Retriever", "German Shepherd", "Labrador \
-                   Retriever", "Chihuahua"],
+        options: ["Golden Retriever", "German Shepherd", "Chihuahua",
+                   "Labrador Retriever"],
         correctAnswer: "Labrador Retriever",
         trivia: "The American Kennel Club reports that the most popular \
                  dog breed in the United States is the Labrador Retriever \
@@ -202,8 +202,8 @@ const questions = [
     },
     {
         question: "Why do dogs chase their tails?",
-        options: ["Boredom", "Excitement", "Dealing with fleas", "All of \
-                   the above"],
+        options: ["Boredom", "Excitement", "Dealing with fleas", 
+                   "All of the above"],
         correctAnswer: "All of the above",
         trivia: "Dogs chase their tails for many reasons! Sometimes, \
                  they just want to expel some energy too!"
@@ -222,7 +222,7 @@ const questions = [
                    and was developed by the Tibetan monks to provide them \
                    an alarm should any unwelcome visitors breach the \
                    sanctity of their monastery?",
-        options: ["Chihuahua", "St. Bernard", "Lhasa Apso ", "Shih Tzu"],
+        options: ["Chihuahua", "St. Bernard", "Lhasa Apso", "Shih Tzu"],
         correctAnswer: "Lhasa Apso",
         trivia: "In Buddhism, it is believed that the souls of lamas or \
                  priests are frequently reborn as Lhasa Apso just before \
