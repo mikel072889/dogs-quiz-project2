@@ -279,10 +279,8 @@ startQuizButton.addEventListener("click", () => {
     startQuiz();
 });
 
-
-
 /**
- * Start the quiz from the first question with 0 score 
+ * Starts the quiz from the first question with 0 score 
  */
 function startQuiz() {
     // These variables are set to 0 at the beginning of the quiz
@@ -297,6 +295,7 @@ function startQuiz() {
     instructionsPage.classList.add("hide");
     displayQuestion(); 
 }
+
 /**
  * Displays the questions and options derived from the questions array variable
  */
@@ -356,12 +355,14 @@ function checkAnswer(e) {
         clickedOption.classList.add("correct-answer");
         userAnswerResult.innerHTML = "YOU FOUND A DOG!";
         happyDog.classList.remove("hide");
+        // Increments number of correct answers
         dogsFound++;
         currentDogsFound.innerHTML = `${dogsFound}`;
     } else {
         clickedOption.classList.add("wrong-answer");
         userAnswerResult.innerHTML = "OOOPPS! YOU LOST ONE DOG!";
         sadDog.classList.remove("hide");
+        // Increments number of wrong answers
         dogsLost++;
         currentDogsLost.innerHTML = `${dogsLost}`;
     }
@@ -393,8 +394,38 @@ function handleNextQuestionButton () {
         sadDog.classList.add("hide");
     } else {
         // Code to be developed yet
-        displayDogsRecued()
+        displayDogsRescued()
     };
+}
+
+function displayDogsRescued() {
+    hideDefaultOptionsButtons();
+    trivia.classList.add("hide");
+    userAnswerResult.classList.add("hide");
+    happyDog.classList.add("hide");
+    sadDog.classList.add("hide");
+
+    if (dogsFound <= 15) {
+        question.innerHTML = `OH NO! You only found ${dogsFound} adorable cute 
+                                dogs! You've got plenty of explaining
+                                to do!`;
+        // PLANNED GIF TO BE ADDED HERE
+    } else if (dogsFound <= 20) {
+        question.innerHTML = `You found ${dogsFound} adorable cute 
+                                dogs! Better make sure they do not escape 
+                                again!`;
+        // PLANNED GIF TO BE ADDED HERE
+    } else if (dogsFound <= 25) {
+        question.innerHTML = `You found ${dogsFound} adorable cute dogs!
+                              These dogs are so lucky to have you! You deserve
+                              an award!`; 
+        // PLANNED GIF TO BE ADDED HERE
+    } else { 
+        question.innerHTML = `Way to go! You retrieved ${dogsFound} dogs! You
+                                are a certified dog guru!`
+    } 
+
+    nextQuestionButton.innerHTML = "Retake Quiz";
 }
 
 // Previous code won't work without this eventListener
