@@ -50,6 +50,7 @@ img {
     width: 81%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 0 0 25px 25px;
 }
 
 .correct {
@@ -170,6 +171,15 @@ button:hover {
     margin-top: 20px;
 }
 
+.result-gif {
+    flex: display;
+    align-items: center;
+    border: solid 3px var(--charcoal);
+    width: 35%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     body {
@@ -199,29 +209,37 @@ button:hover {
     }
 
     .status {
-    font-size: 30px;
+    font-size: 20px;
     }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     body {
-        line-height: 1.6rem;
-        font-size: 20px;
+        line-height: 1.4rem;
+        font-size: 15px;
     }
 
     img {
-        width: 50%;
+        width: 45%;
     }
 
     .page {
-        width: 45%;
+        width: 40%;
     }
 
     h1 {
         font-size: 2rem;
         letter-spacing: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }   
 
-
+/* Large devices (laptops and desktops, 1024px and up) */
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+}

@@ -261,6 +261,8 @@ let currentDogsLost = document.getElementById("wrong-answer");
 const userAnswerResult = document.getElementById("correct-wrong");
 const sadDog = document.getElementById("sad-dog");
 const happyDog = document.getElementById("happy-dog");
+const happyResult = document.getElementById("happy-result");
+const sadResult = document.getElementById("sad-result");
 const trivia = document.getElementById("trivia");
 const startQuizButton = document.getElementById("start-quiz-btn");
 const instructionsPage = document.getElementById("instructions-page");
@@ -416,19 +418,26 @@ function displayDogsRescued() {
                                 dogs! You've got plenty of explaining
                                 to do!`;
         // PLANNED GIF TO BE ADDED HERE
+        sadResult.classList.remove("hide");
+        
     } else if (dogsFound <= 20) {
         question.innerHTML = `You found ${dogsFound} adorable cute 
                                 dogs! Better make sure they do not escape 
                                 again!`;
         // PLANNED GIF TO BE ADDED HERE
+        happyResult.classList.remove("hide");
+
     } else if (dogsFound <= 25) {
         question.innerHTML = `You found ${dogsFound} adorable cute dogs!
                               These dogs are so lucky to have you! You deserve
                               an award!`; 
         // PLANNED GIF TO BE ADDED HERE
+        happyResult.classList.remove("hide");
+
     } else { 
         question.innerHTML = `Way to go! You retrieved ${dogsFound} dogs! You
-                                are a certified dog guru!`
+                                are a certified dog guru!`;
+        happyResult.classList.remove("hide");
     } 
     
     backToInstructions.classList.remove("hide");
