@@ -416,7 +416,7 @@ function displayDogsRescued() {
     if (dogsFound <= 15) {
         question.innerHTML = `OH NO! You only found ${dogsFound} adorable cute 
                                 dogs! You've got plenty of explaining
-                                to do!`;
+                                to do! We should get RSPCA involved!`;
         // PLANNED GIF TO BE ADDED HERE
         sadResult.classList.remove("hide");
         
