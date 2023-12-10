@@ -129,8 +129,8 @@ const questions = [
     },
     {
         question: "Why do dogs curl up when they sleep?",
-        options: ["To show dominance", "To ease aches and pains", "To protect\
-                   their organs", "To make themselves invisible"],
+        options: ["To show dominance", "To protect their organs", "To ease \
+                   aches and pains", "To make themselves invisible"],
         correctAnswer: "To protect their organs",
         trivia: "In addition to providing dogs with greater body heat, \
                  they also curl up to protect their body organs."
