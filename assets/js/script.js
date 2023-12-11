@@ -35,8 +35,8 @@ const questions = [
     },
     {
         question: "Which of these senses does a dog use the most?",
-        options: ["Hearing", "Sight", "Smelling", "Touch"],
-        correctAnswer: "Smelling",
+        options: ["Hearing", "Sight", "Smell", "Touch"],
+        correctAnswer: "Smell",
         trivia: "It has been estimated that a dog’s sense of smell is \
                  100,000 times more powerful than human’s."
     },
@@ -165,7 +165,7 @@ const questions = [
     },
     {
         question: "Which sense are puppies born without?",
-        options: ["Smell", "Sight", "Hearing", "Sight"],
+        options: ["Smell", "Sight", "Hearing", "Touch"],
         correctAnswer: "Hearing",
         trivia: "When puppies are born, the cannot use their hearing \
                  sense yet. They start hearing until they \
