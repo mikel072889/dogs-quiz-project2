@@ -55,20 +55,12 @@ img {
 
 .correct {
     float: left;
-    color: green;
+    color: rgb(1, 94, 1);
 }
-
-/*.correct-answer {
-    background: green;
-}
-
-.wrong-answer {
-    background: red;
-}*/
 
 .wrong {
     float: right;
-    color: red;
+    color: rgb(158, 3, 3);
 }
 
 .question {
