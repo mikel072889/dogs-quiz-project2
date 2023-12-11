@@ -4,7 +4,7 @@
 /* Colors root */
 :root {
     --cream:#F4EBD0;
-    --gold:#cfa24d;
+    --gold:#dab675;
     --charcoal:#122620;
     --tan:#B68D40;
     --lightblue:#ADD8E6;
@@ -55,12 +55,12 @@ img {
 
 .correct {
     float: left;
-    color:darkgreen;
+    color:green;
 }
 
 .wrong {
     float: right;
-    color: darkred;
+    color: red;
 }
 
 .question {
