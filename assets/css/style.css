@@ -86,7 +86,7 @@ img {
     margin-top: 25px;
 }
 
-/*.hide {
+/* .hide {
     display: none;
 }
 
@@ -129,6 +129,12 @@ button {
 
 button:hover {
     background: var(--lightyellow);
+}
+
+/* Code for Save Highscore button */
+button:disabled {
+    background-color: grey;
+    pointer-events: none;
 }
 
 /* Options/Answers buttons styling */
@@ -185,9 +191,12 @@ button:hover {
 /* Form styling */
 #username {
     background-color: #ADD8E6;
+    border-radius: 20px;
     font-family: 'Yusei Magic', sans-serif;
     font-size: 20px;
+    color: var(--charcoal);
     text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Media query: tablets and larger (768px and up) */
