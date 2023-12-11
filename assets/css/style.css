@@ -64,7 +64,7 @@ img {
 
 .wrong {
     float: right;
-    color: red;
+    color: darkred;
     border: solid 2px var(--tan);
     border-radius: 10px 10px 10px 10px;
     background-color: whitesmoke;
