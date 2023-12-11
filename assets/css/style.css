@@ -58,7 +58,7 @@ img {
     color: green;
     border: solid 2px var(--tan);
     border-radius: 10px 10px 10px 10px;
-    background-color: var(--cream);
+    background-color: whitesmoke;
     padding: 6px;
 }
 
@@ -67,7 +67,7 @@ img {
     color: red;
     border: solid 2px var(--tan);
     border-radius: 10px 10px 10px 10px;
-    background-color: var(--cream);
+    background-color: whitesmoke;
     padding: 6px;
 }
 
