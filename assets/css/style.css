@@ -4,7 +4,7 @@
 /* Colors root */
 :root {
     --cream:#F4EBD0;
-    --gold:#dab675;
+    --gold:#d6ab5b;
     --charcoal:#122620;
     --tan:#B68D40;
     --lightblue:#ADD8E6;
@@ -55,12 +55,20 @@ img {
 
 .correct {
     float: left;
-    color:green;
+    color: green;
+    border: solid 2px var(--tan);
+    border-radius: 10px 10px 10px 10px;
+    background-color: var(--cream);
+    padding: 6px;
 }
 
 .wrong {
     float: right;
     color: red;
+    border: solid 2px var(--tan);
+    border-radius: 10px 10px 10px 10px;
+    background-color: var(--cream);
+    padding: 6px;
 }
 
 .question {
