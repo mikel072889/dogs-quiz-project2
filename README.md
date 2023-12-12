@@ -106,6 +106,11 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
         * This button will immediately redirect the user to the first question of the quiz.
 
         [comment]: # (Final image of the retake quiz button here.)
+    <br>
+
+### Features to Implement
+   * In the future, I would like to improve on this game by including a save score functionality and to be able to display high scores with their corresponding usernames.
+   * I also plan to expand this project to a higher scope, for example, a quiz website that can feature a selection of quiz per pet category. Dogs quiz is just one of them!
 
 
     
