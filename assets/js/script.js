@@ -300,6 +300,10 @@ function startQuiz() {
     instructionsPage.classList.add("hide");
     backToInstructions.classList.add("hide");
     displayQuestion(); 
+
+    // Hides the results images when user retakes the quiz
+    sadResult.classList.add("hide");
+    happyResult.classList.add("hide");
 }
 
 /**
