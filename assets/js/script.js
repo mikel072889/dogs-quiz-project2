@@ -427,23 +427,24 @@ function displayDogsRescued() {
     sadDog.classList.add("hide");
 
     if (dogsFound <= 15) {
-        question.innerHTML = `OH NO! You only found ${dogsFound} adorable cute 
-                                dogs! You've got plenty of explaining
-                                to do! We should get RSPCA involved!`;
+        question.innerHTML = `OH NO! You only found ${dogsFound}! You've 
+                                got plenty of explaining to do! 
+                                We should get RSPCA involved!`;
         // PLANNED GIF TO BE ADDED HERE
         sadResult.classList.remove("hide");
         
     } else if (dogsFound <= 20) {
         question.innerHTML = `You found ${dogsFound} adorable cute 
                                 dogs! Better make sure they do not escape 
-                                again!`;
+                                again! But what about the other ${dogsLost}?`;
         // PLANNED GIF TO BE ADDED HERE
-        happyResult.classList.remove("hide");
+        sadResult.classList.remove("hide");
 
     } else if (dogsFound <= 25) {
         question.innerHTML = `You found ${dogsFound} adorable cute dogs!
                               These dogs are so lucky to have you! You deserve
-                              an award!`; 
+                              an award! Let's be positive though, just keep 
+                              looking for the other${dogsLost} still missing.`; 
         // PLANNED GIF TO BE ADDED HERE
         happyResult.classList.remove("hide");
 
