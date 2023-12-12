@@ -1,7 +1,7 @@
 # WHO LET THE DOGS OUT?
 "WHO LET THE DOGS OUT?" is an interactive quiz about man's bestfriend, dogs. It targets those who consider themselves as pet lovers, pet enthusiasts, dog gurus, dog trainers, of even those who know nothing about dogs but want to immerse themselves in this simple but challenging quiz!
 
-It consists of multiple choice questions which are displayed individually with their respective possible answers. There are four options the user can choose from. The quiz also interacts with the user by showing trivias and explanations related to the question or correct answer once an option is clicked. 
+It consists of 30 multiple choice questions which are displayed individually with their respective possible answers. There are four options the user can choose from. The quiz also interacts with the user by showing trivias and explanations related to the question or correct answer once an option is clicked. 
 
 The quiz is designed to be immersive by utilising a storyline that users can read before engaging with the quiz. From the title itself, the storyline revolves around the user being tasked to look after the dogs in a kennel but something goes wrong! In the story, the dogs got out and the only way to find them is by answering the quiz questions! One correct answer equates to one dog found, and one wrong answer equates to one dog lost!
 
@@ -76,5 +76,21 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
             [comment]: # (Final image of wrong answer comment and sad dog gif here.)
 
         * Trivia area - regardless of the result, once an answer has been clicked for every question, a trivia will pop out at the bottom of the page and will display a trivia related to the question and/or the correct answer. Not only that this quiz is designed to test users' dog knowledge, but is also designed to give the user important information about dogs. This provides good learning opportunity to users.
+
+        [comment]: # (Final image of a sample of a trivia here.)
+
+    * Next Question button 
+        * The next question button or the "Hurry! Find more dogs!" button is provided to navigate to the next question. 
+        * Interactivities included: 
+            * Hover effect - changes background color and cursor on hover
+        * Note: The quiz is purposely designed to NOT have a back button to navigate back to previous questions. This will defeat the storyline purpose of finding lost dogs in time!
+
+        [comment]: # (Final image of the next question button here.)
+
+        
+    
+        
+
+
 
 
