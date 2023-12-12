@@ -271,6 +271,11 @@ const instructionsPage = document.getElementById("instructions-page");
 const quizPage = document.getElementById("game-page");
 const header = document.getElementById("header-image");
 const backToInstructions = document.getElementById("back-to-instructions");
+const username = document.getElementById("username");
+const saveScore = document.getElementById("save-score");
+const mostRecentScore = localStorage.getItem("mostRecentScore");
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+const MAX_HIGH_SCORES = 5;
 
 // Calls to go to the story/instructions page: initial page of the quiz
 // Only the story/instructions page will be displayed initially
@@ -444,6 +449,7 @@ function displayDogsRescued() {
     
     backToInstructions.classList.remove("hide");
     nextQuestionButton.innerHTML = "Retake Quiz";
+    localStorage.setItem("mostRecentScore", dogsFound);
 }
 
 backToInstructions.addEventListener("click", () => {
@@ -462,3 +468,29 @@ nextQuestionButton.addEventListener("click", () => {
         startQuiz();
     }
 });
+
+//Code for username input and record user score
+username.addEventListener("keyup", () => {
+    // Disables save score button if no value is entered on the input field
+    saveScore.disabled = !username.value;
+});
+
+
+// Save highscore function 
+function saveHighScore (e) {
+    e.preventDefault();
+    console.log("you clicked save!");
+    const dogsFound = {
+        dogsFound: mostRecentScore,
+        name: username.value
+    };
+    highScores.push(dogsFound);
+
+    highScores.sort((a, b) => b.dogsFound - a.dogsFound);
+
+    highScores.splice(5);
+    
+    console.log(highScores);
+
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+}
