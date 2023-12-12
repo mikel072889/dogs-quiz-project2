@@ -162,17 +162,6 @@ button:hover {
     color: var(--charcoal);
 }
 
-/* Button effect still unknown 
-.option-btn:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-*/
-
 /* GIF image styling - image appears when user selects and option */
 .dancing-dog  {
     display: flex;
