@@ -57,7 +57,7 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
             [comment]: # (Final image of a button with the correct answer clicked here.)
 
-            * Wrong answer clicked - when the wrong answer is clicked by the user, the whole quiz area background color changes to a mildly reddish color warning the user of a wrong answer chosen and/or of a "lost dog". The chosen wrong answer background color also changes to a more saturated red color. All these is expected to generate the feeling of unease to the user and will certainly prompt them to do better on the following questions. Due to this, the color changes are not designed to fullfil accessibility contrast criteria but are still considerably readable and  the users can still carry on with the quiz.
+            * Wrong answer clicked - when the wrong answer is clicked by the user, the whole quiz area background color changes to a mildly reddish color warning the user of a wrong answer chosen and/or of a "lost dog". The chosen wrong answer background color also changes to a more saturated red color while the other unchosen wrong answers to a less saturated red color. All these is expected to generate the feeling of unease to the user and will certainly prompt them to do better on the following questions. Due to this, the color changes are purposely not designed to fullfil accessibility contrast criteria but are still considerably readable and  the users can still carry on with the quiz.
 
             [comment]: # (Final image of a button with the wrong answer clicked here.)
 
