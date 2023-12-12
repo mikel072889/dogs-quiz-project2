@@ -72,11 +72,15 @@ img {
 }
 
 .correct-answer {
-    background: green;
+    background: rgb(143, 255, 99);
 }
 
 .wrong-answer {
     background: red;
+}
+
+.change-background {
+    background-color: rgba(233, 47, 0, 0.87);
 }
 
 .nohover {
@@ -152,6 +156,10 @@ button:hover {
 .option-btn:hover {
     background: var(--lightblue);
     padding-right: 25px;
+}
+
+.option-btn:disabled {
+    color: var(--charcoal);
 }
 
 /* Button effect still unknown 

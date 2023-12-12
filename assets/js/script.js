@@ -373,7 +373,8 @@ function checkAnswer(e) {
         clickedOption.classList.add("wrong-answer");
         userAnswerResult.innerHTML = "OOOPPS! YOU LOST ONE DOG!";
         sadDog.classList.remove("hide");
-        
+        quizPage.classList.add("change-background");
+
         // Increments number of wrong answers
         dogsLost++;
         currentDogsLost.innerHTML = `${dogsLost}`;
@@ -410,6 +411,8 @@ function handleNextQuestionButton () {
         // Code to be developed yet
         displayDogsRescued();
     }
+
+    quizPage.classList.remove("change-background");
 }
 
 function displayDogsRescued() {
