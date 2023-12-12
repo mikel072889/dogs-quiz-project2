@@ -110,6 +110,7 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
 ### Features to Implement
    * In the future, I would like to improve on this game by including a save score functionality and to be able to display high scores with their corresponding usernames.
+   * I also plan to add audio interactivity, for example, wrong answer and correct answer will have their own respective sounds when clicked. It would be more immersive if there is a background sound playing while taking the quiz.
    * I also plan to expand this project to a higher scope, for example, a quiz website that can feature a selection of quiz per pet category. Dogs quiz is just one of them!
 
 ### Favicon
@@ -122,7 +123,49 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 ### Unfixed Bugs
 
 ## Deployment
-    The site was deployed to GitHub pages. 
+### Version Control
+The website was developed using Visual Studio Code IDE. Codes were pushed to github repository mikel072889.github.io/dogs-quiz-project2.
+
+```git add . ``` command was used to add all changes in the current directory to the staging area.
+<br>
+
+```git commit -m “commit message”``` command was used to commit or move added changes to the local repository.
+<br>
+
+```git push ``` command was used to update the remote repository with local commits pushing all changes made to github repository.
+
+### Deployment to Github Pages
+In the early stages of the development, the website was deployed to GitHub Pages to facilitate early identification of bugs and issues. This enabled early fixes and shareable links that can be used to test website from multiple devices.
+* Steps used in Deployment:
+    * Open GitHub repository
+    * Open the Settings tab
+    * On the left sidebar, click on Pages
+    * In Build and deployment, in the Branch section, select Main branch and set folder to /(root) and then click Save
+    * Go back to Code tab
+    * On the right-hand side, in the Deployments section, click on 'Deployments'
+    * Under Active Deployments, a live link will be displayed under github-pages.
+<br>
+
+Here is the live link https://mikel072889.github.io/dogs-quiz-project2/
+
+### Clone Repository Code Locally
+Navigate to the GitHub Repository you want to clone to use locally:
+
+* Click on the code drop down button
+* Click on HTTPS
+* Copy the repository link to the clipboard
+* Open your IDE of choice (git must be installed for the next steps)
+* Type git clone copied-git-url into the IDE terminal
+* The project will now of been cloned on your local machine for use.
+
+## Credits
+* https://github.com/Code-Institute-Org/ci-full-template template used from Code Institute.
+* The Love Maths walkthrough project from Code Institute was used as a guide in the initial phase of setting up this project.
+* Youtube tutorial from https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw also used as guide in developing the javascript codes.  
+* Awesome icons were sourced from https://fontawesome.com/.
+* https://techsini.com/multi-mockup/index.php was used to generate mock-ups for this readme file.
+* American Kennel Club was the source of the questions found in this quiz.
+* https://www.pinterest.co.uk was the source of the GIFs used in this project.
 
 
     
