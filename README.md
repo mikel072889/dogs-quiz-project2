@@ -61,3 +61,20 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
             [comment]: # (Final image of a button with the wrong answer clicked here.)
 
+    * Comment and Trivia area
+        * This is where the result of the question is displayed to show the user whether the user chose the correct answer or not. 
+
+        [comment]: # (Final image of the comment and trivia area here.)
+
+        * To maintain consistency, either one of these two comments are expected to be displayed once triggered: 
+            * "YOU FOUND A DOG!" - This signifies a correct answer chosen and will also be displayed with an image of a dancing dog at the same time. Again, this is to generate excitement on the user and will want to see more of this dancing dog in the next questions. 
+
+            [comment]: # (Final image of correct answer comment and dancing dog gif here.)
+
+            * "OOOPPS! YOU LOST ONE DOG!" - This signifies a wrong answer and will also be displayed with an image of a sad dog at the same time. This will generate a negative feeling from the user from choosing the wrong answer. 
+
+            [comment]: # (Final image of wrong answer comment and sad dog gif here.)
+
+        * Trivia area - regardless of the result, once an answer has been clicked for every question, a trivia will pop out at the bottom of the page and will display a trivia related to the question and/or the correct answer. Not only that this quiz is designed to test users' dog knowledge, but is also designed to give the user important information about dogs. This provides good learning opportunity to users.
+
+
