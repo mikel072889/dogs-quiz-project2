@@ -271,11 +271,6 @@ const instructionsPage = document.getElementById("instructions-page");
 const quizPage = document.getElementById("game-page");
 const header = document.getElementById("header-image");
 const backToInstructions = document.getElementById("back-to-instructions");
-const username = document.getElementById("username");
-const saveScore = document.getElementById("save-score");
-const mostRecentScore = localStorage.getItem("mostRecentScore");
-const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-const MAX_HIGH_SCORES = 5;
 
 // Calls to go to the story/instructions page: initial page of the quiz
 // Only the story/instructions page will be displayed initially
@@ -362,7 +357,7 @@ function checkAnswer(e) {
     // Displays trivia about the question/answer
     trivia.classList.remove("hide");
     backToInstructions.classList.add("hide");
-
+    optionButtons.classList.add("nohover");
     let currentQuestion = questions[questionsArrayIndex];
     trivia.innerHTML = currentQuestion.trivia;
 
@@ -370,6 +365,7 @@ function checkAnswer(e) {
         clickedOption.classList.add("correct-answer");
         userAnswerResult.innerHTML = "YOU FOUND A DOG!";
         happyDog.classList.remove("hide");
+        
         // Increments number of correct answers
         dogsFound++;
         currentDogsFound.innerHTML = `${dogsFound}`;
@@ -377,6 +373,7 @@ function checkAnswer(e) {
         clickedOption.classList.add("wrong-answer");
         userAnswerResult.innerHTML = "OOOPPS! YOU LOST ONE DOG!";
         sadDog.classList.remove("hide");
+        
         // Increments number of wrong answers
         dogsLost++;
         currentDogsLost.innerHTML = `${dogsLost}`;
@@ -389,6 +386,7 @@ function checkAnswer(e) {
 
         // Disallows user to choose another answer after clicking an option
         button.disabled = true;
+        
     });
 
     // Displays the button for the next question once user has chosen an answer
@@ -400,6 +398,7 @@ function checkAnswer(e) {
  */
 function handleNextQuestionButton () {
     questionsArrayIndex++;
+    optionButtons.classList.remove("nohover");
     if (questionsArrayIndex < questions.length) {
         displayQuestion();
         // Re-hide the previous question's trivia and dog GIF
@@ -449,7 +448,6 @@ function displayDogsRescued() {
     
     backToInstructions.classList.remove("hide");
     nextQuestionButton.innerHTML = "Retake Quiz";
-    localStorage.setItem("mostRecentScore", dogsFound);
 }
 
 backToInstructions.addEventListener("click", () => {
@@ -469,28 +467,5 @@ nextQuestionButton.addEventListener("click", () => {
     }
 });
 
-//Code for username input and record user score
-username.addEventListener("keyup", () => {
-    // Disables save score button if no value is entered on the input field
-    saveScore.disabled = !username.value;
-});
 
 
-// Save highscore function 
-function saveHighScore (e) {
-    e.preventDefault();
-    console.log("you clicked save!");
-    const dogsFound = {
-        dogsFound: mostRecentScore,
-        name: username.value
-    };
-    highScores.push(dogsFound);
-
-    highScores.sort((a, b) => b.dogsFound - a.dogsFound);
-
-    highScores.splice(5);
-    
-    console.log(highScores);
-
-    localStorage.setItem("highScores", JSON.stringify(highScores));
-}

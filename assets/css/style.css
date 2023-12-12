@@ -71,6 +71,18 @@ img {
     padding: 6px;
 }
 
+.correct-answer {
+    background: green;
+}
+
+.wrong-answer {
+    background: red;
+}
+
+.nohover {
+    pointer-events: none;
+}
+
 .question {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -86,7 +98,7 @@ img {
     margin-top: 25px;
 }
 
-/* .hide {
+.hide {
     display: none;
 }
 
@@ -129,12 +141,6 @@ button {
 
 button:hover {
     background: var(--lightyellow);
-}
-
-/* Code for Save Highscore button */
-button:disabled {
-    background-color: grey;
-    pointer-events: none;
 }
 
 /* Options/Answers buttons styling */
