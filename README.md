@@ -112,6 +112,18 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
    * In the future, I would like to improve on this game by including a save score functionality and to be able to display high scores with their corresponding usernames.
    * I also plan to expand this project to a higher scope, for example, a quiz website that can feature a selection of quiz per pet category. Dogs quiz is just one of them!
 
+### Favicon
+
+* The quiz page features a favicon with a cartoon image of a dog telling the user that this page is about dogs. This can facilitate easier navigation for users when they have multiple tabs open in one window.
+
+## Testing
+### Validator Testing
+### Bugs
+### Unfixed Bugs
+
+## Deployment
+    The site was deployed to GitHub pages. 
+
 
     
         
