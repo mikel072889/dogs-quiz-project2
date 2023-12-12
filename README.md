@@ -1,39 +1,31 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# WHO LET THE DOGS OUT?
+"WHO LET THE DOGS OUT?" is an interactive quiz about man's bestfriend, dogs. It targets those who consider themselves as pet lovers, pet enthusiasts, dog gurus, dog trainers, of even those who know nothing about dogs but want to immerse themselves in this simple but challenging quiz!
 
-Welcome,
+It consists of questions which are displayed individually with their respective possible answers. There are four options the user can choose from. The quiz also interacts with the user by showing trivias and explanations related to the question or correct answer once an option is clicked. 
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The quiz can be accessed though this live site [here](https://mikel072889.github.io/dogs-quiz-project2/).
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+[comment]: # (Final image of the quiz here.)
 
-## Codeanywhere Reminders
+## Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Existing Features
+* Header 
+    * The header of the page displays the quiz name and shows an image of a collection of various breeds of dogs. This is where the color mottiff of the quiz will be based from to make it more color coordinated. 
+    * The header gives information as to what this page is all about.
 
-`python3 -m http.server`
+    [comment]: # (Final image of the header here.)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+* Instructions Area
+    * The quiz allows users to feel immersed to the quiz by giving the instructions through the use of a simple storyline. With this, users will be more inclined to follow-through with the quiz and will give them the urge to finish the quiz as they would want to finish the story by finishing the quiz.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+    [comment]: # (Final image of the instructions area here.)
 
-`http_server`
+* Start Quiz Button
+    * The start quiz button is not labelled "Start Quiz" for a reason. The button is labelled "Let's go find your dogs!" to add more consistency with the storyline.
+    * This button will take the user to the initial quiz question. 
+    * It features the hover effect and changes background color and mouse pointer when hovered upon. This signals the user that they are about to start the quiz once button is clicked. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    [comment]: # (Final image of the start quiz here.)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
