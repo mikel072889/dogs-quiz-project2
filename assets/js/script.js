@@ -419,6 +419,9 @@ function handleNextQuestionButton () {
     quizPage.classList.remove("change-background");
 }
 
+/**
+ * Displays the final result of the quiz
+ */
 function displayDogsRescued() {
     hideDefaultOptionsButtons();
     trivia.classList.add("hide");
