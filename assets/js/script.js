@@ -2,7 +2,7 @@
 // answers and trivias
 /*jshint multistr: true */
 /*jshint esversion: 6 */
-const questions = [
+/*const questions = [
     {
         question: "What part of a dog is as unique as a human fingerprint?",
         options: ["Ears", "Tail", "Nose", "Stomach"],
@@ -249,7 +249,7 @@ const questions = [
                  other dogs, so they cannot produce a bark. But don’t worry, \
                  they can still growl!"
     },
-];
+];*/
 
 // Required main variables
 const question = document.getElementById("question");
