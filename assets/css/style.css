@@ -19,7 +19,6 @@ body {
     font-family: 'Yusei Magic', sans-serif;
     font-size: 15px;
     line-height: 1.1rem;
-    margin: 10px;
 }
 
 h1 {
@@ -43,6 +42,17 @@ img {
     border-radius: 25px 25px 0 0;
 }
 
+footer {
+    display: block;
+    background-color: var(--charcoal);
+    color: var(--cream);
+    padding: 5px 30px 5px 30px;
+    width: 81%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 25px 25px;
+}
+
 .page {
     display: block;
     background-color: var(--gold);
@@ -50,7 +60,6 @@ img {
     width: 81%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 0 0 25px 25px;
 }
 
 .correct {
@@ -214,9 +223,13 @@ button:hover {
         width: 80%;
     }
 
+    footer {
+        width: 72%; 
+    }
+    
+
     .page {
         width: 72%;
-        margin-bottom: 20px;
     }
 
     h1 {
@@ -248,6 +261,10 @@ button:hover {
 
     .page {
         width: 40%;
+    }
+
+    footer {
+        width: 40%; 
     }
 
     h1 {
