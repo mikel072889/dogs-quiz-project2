@@ -46,33 +46,33 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 * Quiz Area
     * The quiz area is where all the fun is! This contains the individually displayed questions followed by their respective possible answers. This also features the "Dogs found" and "Dogs lost" score feature.
 
-    [comment]: # (Final image of the whole quiz area here.)
+    ![Main Quiz](docs/readme-images/main-quiz-2.jpg)
 
     * Dogs Found and Dogs Lost Scoring System 
         * "Dogs Found"  is where the number of correct answers will be shown and is expected to increment everytime the user clicks on the correct answer. On the other hand, "Dogs Lost" is where the number of wrong answers will be shown and is also expected to increment everytime user clicks on the wrong answer. 
         * Contrary to the usual scoring label "Score", this are is labelled differently to provide consistency with the storyline.
 
-        [comment]: # (Final image of the scoring system here.)
+        ![Scoring system](docs/readme-images/lost-found.jpg)
 
     * Question area
         * The questions are displayed here individually. It is purposely designed to have a dark background and light font so every question will stand out.
        
-        [comment]: # (Final image of the start quiz here.)
+        ![Questions](docs/readme-images/questions.jpg)
     
     * Options area
         * Four options is displayed for the user to choose from
         * Interactivities included:
-            * Hover effect - when hovered upon, texts shift to the left and background color changes. This contributes to visual interactivity of the buttons and allows users to navigate around tese buttons that will tell them exactly what their pointing at.
+            * Hover effect - when hovered upon, texts shift to the left and background color changes. This contributes to visual interactivity of the buttons and allows users to navigate around these buttons that will tell them exactly what their pointing at.
 
-            [comment]: # (Final image of a button being hovered upon here.)
+            ![Hovered Button](docs/readme-images/hovered-button.jpg)
 
             * Correct answer clicked - when the correct answer is clicked by the user, the background color of the correct answer changes to green and all button's hover effect is disabled limiting the user to choose other options once an option is clicked. The background color the the wrong answers also goes darker to put emphasis that these are the wrong answers. The correct answer background color is turned green to generate a positive feeling from the user.
 
-            [comment]: # (Final image of a button with the correct answer clicked here.)
+            ![Correct Answer Button](docs/readme-images/correct-answer.jpg)
 
             * Wrong answer clicked - when the wrong answer is clicked by the user, the whole quiz area background color changes to a mildly reddish color warning the user of a wrong answer chosen and/or of a "lost dog". The chosen wrong answer background color also changes to a more saturated red color while the other unchosen wrong answers to a less saturated red color. All these is expected to generate the feeling of unease to the user and will certainly prompt them to do better on the following questions. Due to this, the color changes are purposely not designed to fullfil accessibility contrast criteria but are still considerably readable and  the users can still carry on with the quiz.
 
-            [comment]: # (Final image of a button with the wrong answer clicked here.)
+            ![Wrong Answer Button](docs/readme-images/wrong-answer.jpg)
 
     * Comment and Trivia area
         * This is where the result of the question is displayed to show the user whether the user chose the correct answer or not. 
