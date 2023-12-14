@@ -3,11 +3,11 @@
 
 /* Colours root - for consistency of colours to be used for this project */
 :root {
-    --cream:#F4EBD0;
-    --gold:#d6ab5b;
-    --charcoal:#122620;
-    --tan:#B68D40;
-    --lightblue:#ADD8E6;
+    --cream: #F4EBD0;
+    --gold: #d6ab5b;
+    --charcoal: #122620;
+    --tan: #B68D40;
+    --lightblue: #ADD8E6;
     --lightyellow: #FFEE75;
 }
 
@@ -159,7 +159,7 @@ showing Divs in html */
     padding: 20px;
 }
 
-/* Buttons styling */ 
+/* Buttons styling */
 /* General buttons styling */
 button {
     font-family: 'Yusei Magic', sans-serif;
@@ -191,7 +191,7 @@ button:hover {
 }
 
 /* GIF image styling - image appears when user selects and option */
-.dancing-dog  {
+.dancing-dog {
     display: flex;
     align-items: center;
     border: solid 3px var(--charcoal);
@@ -243,9 +243,9 @@ button:hover {
     }
 
     footer {
-        width: 72%; 
+        width: 72%;
     }
-    
+
 
     .page {
         width: 72%;
@@ -263,7 +263,7 @@ button:hover {
     }
 
     .status {
-    font-size: 20px;
+        font-size: 20px;
     }
 }
 
@@ -283,7 +283,7 @@ button:hover {
     }
 
     footer {
-        width: 40%; 
+        width: 40%;
     }
 
     h1 {
@@ -292,7 +292,7 @@ button:hover {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-}   
+}
 
 /* Large devices (laptops and desktops, 1024px and up) */
 @media screen and (min-width: 1024px) {

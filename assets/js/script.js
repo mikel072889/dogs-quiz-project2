@@ -2,6 +2,7 @@
 // answers and trivias
 /*jshint multistr: true */
 /*jshint esversion: 6 */
+/*jshint esversion: 8 */
 
 // Required main variables
 let questions = [];
@@ -31,7 +32,7 @@ const username = document.getElementById("username");
 header.addEventListener("click", () => {
     quizPage.classList.add("hide");
     instructionsPage.classList.remove("hide");
-}); 
+});
 
 /**
  * Fetches questions and answers to display from the questions object in json
@@ -40,13 +41,15 @@ header.addEventListener("click", () => {
 const loadQuestions = async () => {
     const response = await fetch("assets/js/questions.json");
     const json = await response.json();
-    questions = json["questions"];
-}
+    questions = json.questions;
+};
 
-loadQuestions(); 
+loadQuestions();
 
+//Mandatory text input required by the user otherwise, quiz start button is 
+//disabled
 username.addEventListener("keyup", () => {
-    startQuizButton.disabled = !username.value
+    startQuizButton.disabled = !username.value;
 });
 
 // Calls to start quiz
@@ -69,7 +72,7 @@ function startQuiz() {
     quizPage.classList.remove("hide");
     instructionsPage.classList.add("hide");
     backToInstructions.classList.add("hide");
-    displayQuestion(); 
+    displayQuestion();
 
     // Hides the results images when user retakes the quiz
     sadResult.classList.add("hide");
@@ -81,16 +84,13 @@ function startQuiz() {
  */
 function displayQuestion() {
     hideDefaultOptionsButtons();
-
     // Hides the trivia section before user chooses answer
     trivia.classList.add("hide");
-
     // Hides the next question button before user chooses an answer
     nextQuestionButton.classList.add("hide");
-
     // Hides button that takes you back to instructions after playing quiz
     backToInstructions.classList.add("hide");
-
+    
     let currentQuestion = questions[questionsArrayIndex];
 
     // Displays current question
@@ -109,7 +109,7 @@ function displayQuestion() {
     optionButtons.addEventListener("click", checkAnswer);
 }
 
-// These codes were extracted from Youtube 
+// This code were extracted from Youtube 
 // https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw
 /**
  * Hides the default options buttons once options 
@@ -135,11 +135,12 @@ function checkAnswer(e) {
     let currentQuestion = questions[questionsArrayIndex];
     trivia.innerHTML = currentQuestion.trivia;
 
+    // 
     if (clickedOption.innerHTML === currentQuestion.correctAnswer) {
         clickedOption.classList.add("correct-answer");
         userAnswerResult.innerHTML = `${username.value}, YOU FOUND A DOG!`;
         happyDog.classList.remove("hide");
-        
+
         // Increments number of correct answers
         dogsFound++;
         currentDogsFound.innerHTML = `${dogsFound}`;
@@ -159,9 +160,9 @@ function checkAnswer(e) {
             button.classList.add("correct-answer");
         }
 
-        // Disallows user to choose another answer after clicking an option
+        // Prevents user from choosing another answer after clicking an option
         button.disabled = true;
-        
+
     });
 
     // Displays the button for the next question once user has chosen an answer
@@ -171,7 +172,7 @@ function checkAnswer(e) {
 /**
  * Code to display the following question, one after another
  */
-function handleNextQuestionButton () {
+function handleNextQuestionButton() {
     questionsArrayIndex++;
     optionButtons.classList.remove("nohover");
     if (questionsArrayIndex < questions.length) {
@@ -186,6 +187,8 @@ function handleNextQuestionButton () {
         displayDogsRescued();
     }
 
+    // Returns page background to its default (if background color changed
+    // due to wrong answer)
     quizPage.classList.remove("change-background");
 }
 
@@ -204,34 +207,36 @@ function displayDogsRescued() {
                                 ${username.value}... You only found ${dogsFound}! 
                                 You've got plenty of explaining to do! 
                                 We should get RSPCA involved!`;
-        // PLANNED GIF TO BE ADDED HERE
+        // Shows GIF Image
         sadResult.classList.remove("hide");
-        
+
     } else if (dogsFound <= 20) {
         question.innerHTML = `You found ${dogsFound} adorable cute 
                                 dogs! Better make sure they do not escape 
                                 again! But what about the other ${dogsLost}?`;
-        // PLANNED GIF TO BE ADDED HERE
+        // Shows GIF Image
         sadResult.classList.remove("hide");
 
     } else if (dogsFound <= 25) {
         question.innerHTML = `You found ${dogsFound} adorable cute dogs!
                               These dogs are so lucky to have you! You deserve
                               an award! Let's be positive though, just keep 
-                              looking for the other${dogsLost} still missing.`; 
-        // PLANNED GIF TO BE ADDED HERE
+                              looking for the other${dogsLost} still missing.`;
+        // Shows GIF Image
         happyResult.classList.remove("hide");
 
-    } else { 
+    } else {
         question.innerHTML = `Way to go ${username.value}! You retrieved 
                                 ${dogsFound} dogs! You are a certified dog guru!`;
+        // Shows GIF Image
         happyResult.classList.remove("hide");
-    } 
-    
+    }
+
     backToInstructions.classList.remove("hide");
     nextQuestionButton.innerHTML = "Retake Quiz";
 }
 
+// Back to the Kennel Event Listener
 backToInstructions.addEventListener("click", () => {
     quizPage.classList.add("hide");
     instructionsPage.classList.remove("hide");
