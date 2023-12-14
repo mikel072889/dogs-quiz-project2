@@ -178,13 +178,6 @@ button:hover {
     color: var(--charcoal);
 }
 
-#save-username-button {
-    font-size: 15px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    margin-bottom: 10px;
-}
-
 /* GIF image styling - image appears when user selects and option */
 .dancing-dog  {
     display: flex;

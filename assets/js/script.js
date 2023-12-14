@@ -25,7 +25,6 @@ const quizPage = document.getElementById("game-page");
 const header = document.getElementById("header-image");
 const backToInstructions = document.getElementById("back-to-instructions");
 const username = document.getElementById("username");
-const saveUsernameButton = document.getElementById("save-username-button");
 
 // Calls to go to the story/instructions page: initial page of the quiz
 // Only the story/instructions page will be displayed initially
@@ -47,12 +46,13 @@ const loadQuestions = async () => {
 loadQuestions(); 
 
 username.addEventListener("keyup", () => {
-    saveUsernameButton.disabled = !username.value;
+    startQuizButton.disabled = !username.value
 });
+
 
 // Calls to start quiz
 startQuizButton.addEventListener("click", () => {
-        startQuiz();
+    startQuiz();
 });
 
 /**
