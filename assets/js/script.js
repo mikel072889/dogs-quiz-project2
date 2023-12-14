@@ -221,7 +221,7 @@ function displayDogsRescued() {
         question.innerHTML = `You found ${dogsFound} adorable cute dogs!
                               These dogs are so lucky to have you! You deserve
                               an award! Let's be positive though, just keep 
-                              looking for the other${dogsLost} still missing.`;
+                              looking for the other ${dogsLost} still missing.`;
         // Shows GIF Image
         happyResult.classList.remove("hide");
 
