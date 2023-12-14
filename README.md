@@ -22,7 +22,12 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
     * The quiz allows users to feel immersed to the quiz by giving the instructions through the use of a simple storyline. With this, users will be more inclined to follow-through with the quiz and will give them the urge to finish the quiz as they would want to finish the story by finishing the quiz.
 
     [comment]: # (Final image of the instructions area here.)
-
+  
+    * Username input field
+        * This input field collects the username and is mandatory to start the quiz. The user's name will then be consistenly used during the quiz to make it more customised for the user.
+  
+        [comment]: # (Final image of the input field here.)
+      
     * Start Quiz Button
         * The start quiz button is not labelled "Start Quiz" for a reason. The button is labelled "Let's go find your dogs!" to add more consistency with the storyline.
         * This button will take the user to the initial quiz question. 
