@@ -89,6 +89,11 @@
         <!-- Quiz questions here -->
         <div id="question" class="question page">Question here
         </div>
+        <div id="back-to-instructions" class="hide page">
+          <button class="btn" 
+          aria-label="Back button (returns to the instruction page)">
+          Back to the Kennel</button>
+        </div>
         <!-- Multiple answers here. 4 buttons = 4 options per question -->
         <div id="option-buttons">
           <button class="option-btn" aria-label="Option 1">Option 1</button>
@@ -141,8 +146,7 @@
           <button 
             type="submit" 
             class="btn" 
-            id="save-score-button"
-            onclick="saveHighScore(event)" 
+            id="save-score-button" 
             disabled 
             aria-label="Save"
           >
@@ -150,14 +154,10 @@
           </button>
         </form>
       </div>
-      <div id="back-to-instructions" class="hide page">
-          <button class="btn" 
-          aria-label="Back button (returns to the instruction page)">
-          Back to the Kennel</button>
-        </div>
       <!-- High Scores Div -->
       <div id="highscores" class="page hide highscores">
-        <h2 id="final-score">Top Scores</h2>
+        <h2>Top Scores</h2>
+        <h3 id="final-score"></h3>
           <ul id="high-scores-list"></ul>
           <button class="btn" 
             aria-label="Back button (returns to the instruction page)">
