@@ -49,7 +49,6 @@ username.addEventListener("keyup", () => {
     startQuizButton.disabled = !username.value
 });
 
-
 // Calls to start quiz
 startQuizButton.addEventListener("click", () => {
     startQuiz();
@@ -138,7 +137,7 @@ function checkAnswer(e) {
 
     if (clickedOption.innerHTML === currentQuestion.correctAnswer) {
         clickedOption.classList.add("correct-answer");
-        userAnswerResult.innerHTML = "YOU FOUND A DOG!";
+        userAnswerResult.innerHTML = `${username.value}, YOU FOUND A DOG!`;
         happyDog.classList.remove("hide");
         
         // Increments number of correct answers
@@ -146,7 +145,7 @@ function checkAnswer(e) {
         currentDogsFound.innerHTML = `${dogsFound}`;
     } else {
         clickedOption.classList.add("wrong-answer");
-        userAnswerResult.innerHTML = "OOOPPS! YOU LOST ONE DOG!";
+        userAnswerResult.innerHTML = `OOOPPS! ${username.value}, YOU LOST ONE DOG!`;
         sadDog.classList.remove("hide");
         quizPage.classList.add("change-background");
 
@@ -201,8 +200,9 @@ function displayDogsRescued() {
     sadDog.classList.add("hide");
 
     if (dogsFound <= 15) {
-        question.innerHTML = `OH NO! You only found ${dogsFound}! You've 
-                                got plenty of explaining to do! 
+        question.innerHTML = `${username.value}, ${username.value}, 
+                                ${username.value}... You only found ${dogsFound}! 
+                                You've got plenty of explaining to do! 
                                 We should get RSPCA involved!`;
         // PLANNED GIF TO BE ADDED HERE
         sadResult.classList.remove("hide");
@@ -223,8 +223,8 @@ function displayDogsRescued() {
         happyResult.classList.remove("hide");
 
     } else { 
-        question.innerHTML = `Way to go! You retrieved ${dogsFound} dogs! You
-                                are a certified dog guru!`;
+        question.innerHTML = `Way to go ${username.value}! You retrieved 
+                                ${dogsFound} dogs! You are a certified dog guru!`;
         happyResult.classList.remove("hide");
     } 
     
