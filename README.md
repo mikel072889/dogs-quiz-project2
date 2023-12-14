@@ -70,27 +70,22 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
             ![Correct Answer Button](docs/readme-images/correct-answer.jpg)
 
-            * Wrong answer clicked - when the wrong answer is clicked by the user, the whole quiz area background color changes to a mildly reddish color warning the user of a wrong answer chosen and/or of a "lost dog". The chosen wrong answer background color also changes to a more saturated red color while the other unchosen wrong answers to a less saturated red color. All these is expected to generate the feeling of unease to the user and will certainly prompt them to do better on the following questions. Due to this, the color changes are purposely not designed to fullfil accessibility contrast criteria but are still considerably readable and  the users can still carry on with the quiz.
+            * Wrong answer clicked - when the wrong answer is clicked by the user, the whole quiz area background color changes to a mildly reddish color warning the user of a wrong answer chosen and/or of a "lost dog". The chosen wrong answer background color also changes to a more saturated red color while the other unchosen wrong answers to a less saturated red color. This is expected to generate the feeling of unease to the user and will certainly prompt them to do better on the following questions. Due to this, the color changes are purposely not designed to fullfil accessibility contrast criteria but are still considerably readable and  the users can still carry on with the quiz. The correct answer remains green.
 
             ![Wrong Answer Button](docs/readme-images/wrong-answer.jpg)
 
     * Comment and Trivia area
         * This is where the result of the question is displayed to show the user whether the user chose the correct answer or not. 
-
-        [comment]: # (Final image of the comment and trivia area here.)
-
         * To maintain consistency, either one of these two comments are expected to be displayed once triggered: 
             * "YOU FOUND A DOG!" - This signifies a correct answer chosen and will also be displayed with an image of a dancing dog at the same time. Again, this is to generate excitement on the user and will want to see more of this dancing dog in the next questions. 
 
-            [comment]: # (Final image of correct answer comment and dancing dog gif here.)
+            ![Trivia and dancing dog](docs/readme-images/trivia-correct.jpg)
 
             * "OOOPPS! YOU LOST ONE DOG!" - This signifies a wrong answer and will also be displayed with an image of a sad dog at the same time. This will generate a negative feeling from the user from choosing the wrong answer. 
 
-            [comment]: # (Final image of wrong answer comment and sad dog gif here.)
+            ![Trivia and weeping dog](docs/readme-images/trivia-wrong.jpg)
 
         * Trivia area - regardless of the result, once an answer has been clicked for every question, a trivia will pop out at the bottom of the page and will display a trivia related to the question and/or the correct answer. Not only that this quiz is designed to test users' dog knowledge, but is also designed to give the user important information about dogs. This provides good learning opportunity to users.
-
-        [comment]: # (Final image of a sample of a trivia here.)
 
     * Next Question button 
         * The next question button or the "Hurry! Find more dogs!" button is provided to navigate to the next question. 
@@ -98,7 +93,7 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
             * Hover effect - changes background color and cursor on hover
         * Note: The quiz is purposely designed to NOT have a back button to navigate back to previous questions. This will defeat the storyline purpose of finding lost dogs in time!
 
-        [comment]: # (Final image of the next question button here.)
+        ![Next Button](docs/readme-images/next-button.jpg)
 
 * End Game Area
     * This area only displays once the quiz is done. This will show the final result of the quiz including the final tally of dogs found and dogs lost. 
