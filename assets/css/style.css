@@ -132,6 +132,21 @@ showing Divs in html */
     display: none;
 }
 
+/* Hide form label content for the input - 
+code reference and copied from
+https: //a11y-guidelines.orange.com/en/articles/accessible-hiding*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
 /* Question page styling */
 #question {
     background-color: var(--charcoal);
