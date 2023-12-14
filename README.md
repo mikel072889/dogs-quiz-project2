@@ -7,7 +7,8 @@ The quiz is designed to be immersive by utilising a storyline that users can rea
 
 The quiz can be accessed though this live site [here](https://mikel072889.github.io/dogs-quiz-project2/).
 
-[comment]: # (Final image of the quiz here.)
+![Quiz Page 1](docs/readme-images/main-quiz-1.jpg)
+![Quiz Page 2](docs/readme-images/main-quiz-2.jpg)
 
 ## Features
 
