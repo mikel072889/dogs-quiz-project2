@@ -16,27 +16,21 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 * Header 
     * The header of the page displays the quiz name and shows an image of a collection of various breeds of dogs. This is where the color mottiff of the quiz will be based from to make it more color coordinated. 
     * The header gives information as to what this page is all about.
+    * The header can also be clicked by the user to exit the quiz. This is clearly stated within the instructions.
 
-    [comment]: # (Final image of the header here.)
+    ![Header Image](docs/readme-images/header.jpg)
 
 * Instructions Area
     * The quiz allows users to feel immersed to the quiz by giving the instructions through the use of a simple storyline. With this, users will be more inclined to follow-through with the quiz and will give them the urge to finish the quiz as they would want to finish the story by finishing the quiz.
 
     [comment]: # (Final image of the instructions area here.)
-  
-    * Username input field
-        * This input field collects the username and is mandatory to start the quiz. The user's name will then be consistenly used during the quiz to make it more customised for the user.
-  
-        [comment]: # (Final image of the input field here.)
-      
+
     * Start Quiz Button
         * The start quiz button is not labelled "Start Quiz" for a reason. The button is labelled "Let's go find your dogs!" to add more consistency with the storyline.
-        * This button will take the user to the initial quiz question.
-        * This is disabled by default and will only be enabled once user has entered name on the input field 
+        * This button will take the user to the initial quiz question. 
         * It features the hover effect and changes background color and mouse pointer when hovered upon. This signals the user that they are about to start the quiz once button is clicked. 
 
-        [comment]: # (Final image of the start quiz disabled here.)
-        [comment]: # (Final image of the start quiz enabled here.)
+        [comment]: # (Final image of the start quiz here.)
 
 * Quiz Area
     * The quiz area is where all the fun is! This contains the individually displayed questions followed by their respective possible answers. This also features the "Dogs found" and "Dogs lost" score feature.
