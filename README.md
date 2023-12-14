@@ -30,10 +30,12 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
       
     * Start Quiz Button
         * The start quiz button is not labelled "Start Quiz" for a reason. The button is labelled "Let's go find your dogs!" to add more consistency with the storyline.
-        * This button will take the user to the initial quiz question. 
+        * This button will take the user to the initial quiz question.
+        * This is disabled by default and will only be enabled once user has entered name on the input field 
         * It features the hover effect and changes background color and mouse pointer when hovered upon. This signals the user that they are about to start the quiz once button is clicked. 
 
-        [comment]: # (Final image of the start quiz here.)
+        [comment]: # (Final image of the start quiz disabled here.)
+        [comment]: # (Final image of the start quiz enabled here.)
 
 * Quiz Area
     * The quiz area is where all the fun is! This contains the individually displayed questions followed by their respective possible answers. This also features the "Dogs found" and "Dogs lost" score feature.
