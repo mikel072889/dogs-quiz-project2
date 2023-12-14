@@ -65,12 +65,24 @@
         <p>Feel free to EXIT the quiz by tapping or clicking on any of the dogs 
           above!
         </p>
-        <div>
-          <button id="start-quiz-btn" class="btn start-quiz-btn" 
+        <form>
+          <input type="text" name="username" id="username"
+              placeholder="Enter your name">
+          <br>
+          <button 
+            type="submit" 
+            class="btn" 
+            id="save-username-button" 
+            disabled 
+            aria-label="Save"
+            >
+            Save
+          </button>
+        </form>
+        <button id="start-quiz-btn" class="btn start-quiz-btn" 
                   aria-label="start-quiz">
             Let's go find your dogs!
-          </button>
-        </div>
+        </button>
       </div>
 
       <!-- Main page: main game page. This page will be hidden at the beginning
@@ -137,32 +149,6 @@
             Hurry! Find more dogs!
           </button>
         </div>
-      </div>
-      <!-- Form Div on End of the Quiz -->
-      <div id="form-end-quiz" class="form-end-quiz hide page">
-        <form>
-          <input type="text" name="username" id="username"
-          placeholder="Enter your name">
-          <button 
-            type="submit" 
-            class="btn" 
-            id="save-score-button" 
-            disabled 
-            aria-label="Save"
-          >
-            Save
-          </button>
-        </form>
-      </div>
-      <!-- High Scores Div -->
-      <div id="highscores" class="page hide highscores">
-        <h2>Top Scores</h2>
-        <h3 id="final-score"></h3>
-          <ul id="high-scores-list"></ul>
-          <button class="btn" 
-            aria-label="Back button (returns to the instruction page)">
-            Back to the Kennel
-          </button>
       </div>
     </main>
     <footer>

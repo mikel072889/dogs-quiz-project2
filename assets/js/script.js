@@ -24,11 +24,8 @@ const instructionsPage = document.getElementById("instructions-page");
 const quizPage = document.getElementById("game-page");
 const header = document.getElementById("header-image");
 const backToInstructions = document.getElementById("back-to-instructions");
-const quizEnd = document.getElementById("form-end-quiz");
-
 const username = document.getElementById("username");
-const saveScoreButton = document.getElementById("save-score-button");
-
+const saveUsernameButton = document.getElementById("save-username-button");
 
 // Calls to go to the story/instructions page: initial page of the quiz
 // Only the story/instructions page will be displayed initially
@@ -49,9 +46,13 @@ const loadQuestions = async () => {
 
 loadQuestions(); 
 
+username.addEventListener("keyup", () => {
+    saveUsernameButton.disabled = !username.value;
+});
+
 // Calls to start quiz
 startQuizButton.addEventListener("click", () => {
-    startQuiz();
+        startQuiz();
 });
 
 /**
@@ -229,15 +230,11 @@ function displayDogsRescued() {
     
     backToInstructions.classList.remove("hide");
     nextQuestionButton.innerHTML = "Retake Quiz";
-
-    
-    quizEnd.classList.remove("hide");
 }
 
 backToInstructions.addEventListener("click", () => {
     quizPage.classList.add("hide");
     instructionsPage.classList.remove("hide");
-    quizEnd.classList.add("hide");
 });
 
 // Previous code won't work without this eventListener
@@ -249,16 +246,13 @@ nextQuestionButton.addEventListener("click", () => {
     } else {
         // Restarts the quiz all over again
         startQuiz();
-        quizEnd.classList.add("hide");
     }
 });
 
-username.addEventListener("keyup", () => {
-    saveScoreButton.disabled = !username.value;
-});
 
 
-saveScoreButton.addEventListener("click", saveHighScore);
+
+
 
 
 
