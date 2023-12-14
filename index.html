@@ -73,11 +73,11 @@
               placeholder="Type name here" required>
           <br>
         </form>
+        <!-- Button to start the quiz -->
         <button id="start-quiz-btn" class="btn start-quiz-btn" 
                   aria-label="start-quiz" type="submit" disabled>
             Let's go find your dogs!
         </button>
-        </div>
       </div>
 
       <!-- Main page: main game page. This page will be hidden at the beginning
@@ -93,9 +93,10 @@
           </span>
         </div>
 
-        <!-- Quiz questions here -->
+        <!-- Quiz questions will be displayed individually here -->
         <div id="question" class="question page">Question here
         </div>
+        <!-- Back to instructions page: appears after the quiz -->
         <div id="back-to-instructions" class="hide page">
           <button class="btn" 
           aria-label="Back button (returns to the instruction page)">
@@ -110,7 +111,7 @@
         </div>
         <!-- Trivia section: This section shows up when user chooses an answer 
             to confirm whether user chose the correct or wrong answer, 
-            afterwards, a trivia or explanation is displayed -->
+            afterwards, a trivia/explanation and images are displayed -->
         <div id="correct-wrong" class="correct-wrong hide">
           <h2>You found a dog!</h2>
         </div>
@@ -130,6 +131,7 @@
           <img src="assets/images/happy-dog.gif" class="happy-result result-gif"
           alt="Cartoon image of a happy dog">
         </div>
+        <!-- This is the trivia section -->
         <div id="trivia" class="trivia hide">
           <p>
             Dog’s nose, when combined with the shape of its nostril openings, is
@@ -146,6 +148,7 @@
         </div>
       </div>
     </main>
+    <!-- Footer -->
     <footer>
       <p>&copy; 2023 Mikel's Quizzes</p>
     </footer>
