@@ -28,11 +28,7 @@ const quizEnd = document.getElementById("form-end-quiz");
 
 const username = document.getElementById("username");
 const saveScoreButton = document.getElementById("save-score-button");
-const finalScore = document.getElementById("final-score");
 
-
-const highScores = JSON.parse(localStorage.getItem("highscores")) || [];
-const MAX_HIGH_SCORES = 5;
 
 // Calls to go to the story/instructions page: initial page of the quiz
 // Only the story/instructions page will be displayed initially
@@ -257,28 +253,15 @@ nextQuestionButton.addEventListener("click", () => {
     }
 });
 
-const mostRecentScore = localStorage.getItem("dogsFound");
-finalScore.innerText = mostRecentScore;
-
 username.addEventListener("keyup", () => {
     saveScoreButton.disabled = !username.value;
 });
 
+
 saveScoreButton.addEventListener("click", saveHighScore);
 
-function saveHighScore () {
-    
-    const score = {
-        score: mostRecentScore,
-        name: username.value,
-    };
-    highScores.push(score);
-    highScores.sort((a, b) => b.score - a.score);
-    highScores.splice(5);
 
-    localStorage.setItem("highScores", JSON.stringify(highScores));
-    window.location.assign("/");
-} 
+
 
 
 
