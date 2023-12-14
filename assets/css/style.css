@@ -1,7 +1,7 @@
 /* Google font import */
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
-/* Colors root */
+/* Colours root - for consistency of colours to be used for this project */
 :root {
     --cream:#F4EBD0;
     --gold:#d6ab5b;
@@ -48,6 +48,7 @@ input {
     width: 80%
 }
 
+/* Placeholder styling */
 ::placeholder {
     font-size: 15px;
     color: red;
@@ -64,6 +65,7 @@ footer {
     border-radius: 0 0 25px 25px;
 }
 
+/* Main, Instructions, Quiz Pages styling */
 .page {
     display: block;
     background-color: var(--gold);
@@ -73,6 +75,7 @@ footer {
     margin-right: auto;
 }
 
+/* Quiz Page Features and Buttons Styling */
 .correct {
     float: left;
     color: green;
@@ -103,6 +106,7 @@ footer {
     background-color: rgba(233, 47, 0, 0.87);
 }
 
+/* Deactivated Hover styling */
 .nohover {
     pointer-events: none;
 }
@@ -122,6 +126,8 @@ footer {
     margin-top: 25px;
 }
 
+/* Very important HIDE class used frequently in JavaScript for hiding and
+showing Divs in html */
 .hide {
     display: none;
 }
@@ -144,6 +150,7 @@ footer {
     width: 35%;
 }
 
+/* Trivia section styling */
 #trivia {
     background-color: var(--lightblue);
     margin-top: 30px;
@@ -163,6 +170,7 @@ button {
     cursor: pointer;
 }
 
+/* Button background change on hover */
 button:hover {
     background: var(--lightyellow);
 }
