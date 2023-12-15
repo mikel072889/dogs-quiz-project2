@@ -183,6 +183,7 @@ has been used fix this.
 ### Functions Testing
 * Functions and features have been mainly tested on Google Chrome.  
 * Some methods are not compatible with Firefox such as the location.reload() method. 
+* 404 Page was also tested and passed.
 
 | Function                                        | Action                                    | Expected Result                                                        | PASS / FAIL |
 | ----------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------------------- | ----------- |
@@ -225,6 +226,12 @@ has been used fix this.
 | Exit Game                                       | Click on the header (Group of dogs image) | User is takem to the instructions page of the quiz                     | PASS        |
 |                                                 |                                           | Previous user's name on input field is erased                          | PASS        |
 | Footer link to Github                           | Click                                     | User is taken to creator's GitHub page                                 | PASS        |
+
+### Lighthouse Testing
+
+Lighthouse testing was also carried out to determine any points of improvement for the website. The performance criteria requires more looking into in the future.
+
+![Lighthouse result](docs/readme-images/lightouse-dogs-quiz.jpg)
 
 
 ## Deployment
