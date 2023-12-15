@@ -271,7 +271,7 @@ Navigate to the GitHub Repository you want to clone to use locally:
 * https://techsini.com/multi-mockup/index.php was used to generate mock-ups for this readme file.
 * American Kennel Club was the source of the questions found in this quiz.
 * https://www.pinterest.co.uk was the source of the GIFs used in this project.
-
+* https: //a11y-guidelines.orange.com/en/articles/accessible-hiding was the source of the code to visually hide input label.
 
     
         
