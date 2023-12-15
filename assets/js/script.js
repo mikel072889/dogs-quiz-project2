@@ -32,6 +32,12 @@ const username = document.getElementById("username");
 header.addEventListener("click", () => {
     quizPage.classList.add("hide");
     instructionsPage.classList.remove("hide");
+    happyDog.classList.add("hide");
+    sadDog.classList.add("hide");
+    userAnswerResult.classList.add("hide");
+    //Refreshes the page when user decides to exit game. 
+    //Also eliminates previous users username in teh input field
+    location.reload();
 });
 
 /**
@@ -67,7 +73,9 @@ function startQuiz() {
     currentDogsFound.innerHTML = 0;
     dogsLost = 0;
     currentDogsLost.innerHTML = 0;
+    
     nextQuestionButton.innerHTML = "Hurry! Find more dogs!";
+    
     // Codes for which game page to display
     quizPage.classList.remove("hide");
     instructionsPage.classList.add("hide");
