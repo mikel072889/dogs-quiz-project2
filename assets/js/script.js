@@ -248,6 +248,7 @@ function displayDogsRescued() {
 backToInstructions.addEventListener("click", () => {
     quizPage.classList.add("hide");
     instructionsPage.classList.remove("hide");
+    location.reload();
 });
 
 // Previous code won't work without this eventListener
