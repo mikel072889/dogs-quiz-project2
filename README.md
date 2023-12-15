@@ -95,25 +95,28 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
         ![Next Button](docs/readme-images/next-button.jpg)
 
-* End Game Area
+* End of the Quiz Area
     * This area only displays once the quiz is done. This will show the final result of the quiz including the final tally of dogs found and dogs lost. 
 
-    [comment]: # (Final image of the final tally of the scores here.)
+    ![End of Quiz 1](docs/readme-images/end-quiz-1.jpg)
+    ![End of Quiz 2](docs/readme-images/end-quiz-2.jpg)
 
-    * In the middle is the final concluding comments still in consistency with the siryline and will show one of these three comments depending on the user's final score: 
+    * In the middle is the final concluding comments still in consistency with the storyline and will show one of these three comments depending on the user's final score: 
     
-    [comment]: # (Three images of the concluding comments per score range here.)
+    ![Comments 1](docs/readme-images/comment-1.jpg)
+    ![Comments 2](docs/readme-images/comment-2.jpg)
+    ![Comments 3](docs/readme-images/comment-3.jpg)
 
     * Back button and result-based image of a dog
         * The back button or the "Back to the kennel" button navigates back to the instructions area and will allow the user to revisit the storyline or instructions of the quiz and retake the quiz.
         * An image of a happy or sad dog will also be displayed and will depend on the user score.
 
-        [comment]: # (Final image of Back button with the result-based image here.)
+        ![Back Button and results image](docs/readme-images/back-button.jpg)
 
     * Retake Quiz
         * This button will immediately redirect the user to the first question of the quiz.
 
-        [comment]: # (Final image of the retake quiz button here.)
+        ![Retake Quiz Button](docs/readme-images/retake-quiz-button.jpg)
     <br>
 
 ### Features to Implement
