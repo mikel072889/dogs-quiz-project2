@@ -48,6 +48,10 @@ input {
     width: 80%
 }
 
+a {
+    color: var(--cream);
+}
+
 /* Placeholder styling */
 ::placeholder {
     font-size: 15px;

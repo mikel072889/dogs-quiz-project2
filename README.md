@@ -128,7 +128,11 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
 * The quiz page features a favicon with a cartoon image of a dog telling the user that this page is about dogs. This can facilitate easier navigation for users when they have multiple tabs open in one window.
 
+![Dog Favicon](docs/readme-images/dog-favicon.jpg)
+
 ## Testing
+### Responsiveness
+Responsiveness was tested using Chrome DevTools and expected results were met.
 ### Validator Testing
 ### Bugs
 ### Unfixed Bugs
