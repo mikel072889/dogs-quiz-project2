@@ -142,7 +142,13 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
 ## Testing
 ### Responsiveness
-Responsiveness was tested using Chrome DevTools and expected results were met.
+Responsiveness was tested using mainly Chrome DevTools and expected results were met.
+* Browsers used in testing responsiveness were Chrome, Safari, Mozilla Firefox, and Microsoft Edge.
+* The website was also accessed via the following devices and no responsiveness issues identified:
+    * iPhone 12
+    * Samsung Galaxy S23
+    * iPad Mini
+    * Google Pixel 6
 
 ### Accessibility
 Accessibility of the website is of paramount importance that is why [Wave Accessibility](https://wave.webaim.org/) tool was used throughout the development, especially towards the final stages.
