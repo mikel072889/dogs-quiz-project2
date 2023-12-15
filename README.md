@@ -178,7 +178,10 @@ has been used fix this.
 ![Reload Page](docs/readme-images/location-reload.jpg)
 
 ### Unfixed Bugs
-* There are no identified bugs to fix so far.
+* When double-clicked, the answer/options button background color changes to red and remains red all throughout the quiz.
+
+### JavaScript Functions Testing
+
 
 ## Deployment
 ### Version Control
