@@ -134,6 +134,12 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
 ![Dog Favicon](docs/readme-images/dog-favicon.jpg)
 
+### 404 Page
+
+* A 404 page is also available should the user navigate to a broken link. This is done with minimal styling and is designed to be user-friendly to show users that we care about their experience and that we want them to remain navigating the website, hence, a link is provided to redirect them to the main landing page.
+
+![Page Not Found Image](docs/readme-images/404-page.jpg)
+
 ## Testing
 ### Responsiveness
 Responsiveness was tested using Chrome DevTools and expected results were met.
