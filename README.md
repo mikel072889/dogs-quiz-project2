@@ -180,7 +180,51 @@ has been used fix this.
 ### Unfixed Bugs
 * When double-clicked, the answer/options button background color changes to red and remains red all throughout the quiz.
 
-### JavaScript Functions Testing
+### Functions Testing
+* Functions and features have been mainly tested on Google Chrome.  
+* Some methods are not compatible with Firefox such as the location.reload() method. 
+
+| Function                                        | Action                                    | Expected Result                                                        | PASS / FAIL |
+| ----------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------------------- | ----------- |
+| Input for username - mandatory to play quiz     | Add username in a form of text            | Disabled Start button gets enabled                                     | PASS        |
+|                                                 |                                           | Button text gets bolder and changes background color                   | PASS        |
+| Start Button/"Let's go find your dogs" Button   | Click                                     | Changes color on hover                                                 | PASS        |
+|                                                 |                                           | Main quiz page displayed                                               | PASS        |
+| Correct Answer Button                           | Click the correct answer                  | A comment and an image of a dancing dog appears                        | PASS        |
+|                                                 |                                           | Trivia appears                                                         | PASS        |
+|                                                 |                                           | "Dogs Found" increments by 1                                           | PASS        |
+|                                                 |                                           | Clicked button remains green                                           | PASS        |
+|                                                 |                                           | Other buttons' color goes darker                                       | PASS        |
+|                                                 |                                           | All buttons are disabled including hover effect                        | PASS        |
+|                                                 |                                           | Next Question Button/ "Let's find more dogs!" Button appears           | PASS        |
+| Wrong Answer Button                             | Click on any wrong answer                 | A comment and an image of a weeping dog appears                        | PASS        |
+|                                                 |                                           | Trivia appears                                                         | PASS        |
+|                                                 |                                           | "Dogs Lost" increments by 1                                            | PASS        |
+|                                                 |                                           | Clicked button turns red                                               | PASS        |
+|                                                 |                                           | Correct answer button turns green                                      | PASS        |
+|                                                 |                                           | Other buttons' color turns light red in color                          | PASS        |
+|                                                 |                                           | Background color changes to light red                                  | PASS        |
+|                                                 |                                           | All buttons are disabled including hover effect                        | PASS        |
+|                                                 |                                           | Next Question Button/ "Let's find more dogs!" Button appears           | PASS        |
+| Options Buttons                                 | Hover                                     | Cursor changes to a hand pointer                                       | PASS        |
+|                                                 |                                           | Texts move slightly to the left                                        | PASS        |
+|                                                 |                                           | Background color changes to light blue                                 | PASS        |
+| Next Question/"Let's go find more dogs!" Button | Click                                     | Takes user to the next set of question and answer                      | PASS        |
+|                                                 |                                           | Previous scores remain until user clicks an answer button              | PASS        |
+|                                                 |                                           | Changes color on hover                                                 | PASS        |
+| "Dogs Found" scoring                            | if user clicks a correct answer           | Increments by 1 for every clicked correct answer per question          | PASS        |
+| "Dogs Lost" scoring                             | if user clicks a wrong answer             | Increments by 1 for every clicked wrong answer per question            | PASS        |
+| End of Quiz                                     | User answers the last question            | Score is indicated through a comment                                   | PASS        |
+|                                                 |                                           | Back/"Back to the kennel" Button appears                               | PASS        |
+|                                                 |                                           | Weeping dog GIF image appears if low score                             | PASS        |
+|                                                 |                                           | Happy dog GIF image appears if high score                              | PASS        |
+|                                                 |                                           | Retake Quiz Button appears                                             | PASS        |
+| Back/"Back to the kennel" Button                | Click                                     | User is taken to the instructions page of the quiz                     | PASS        |
+|                                                 |                                           | Previous user's name on input field is erased                          | PASS        |
+| Retake Quiz Button                              | Click                                     | User is immediately taken back to the first set of question and answer | PASS        |
+| Exit Game                                       | Click on the header (Group of dogs image) | User is takem to the instructions page of the quiz                     | PASS        |
+|                                                 |                                           | Previous user's name on input field is erased                          | PASS        |
+| Footer link to Github                           | Click                                     | User is taken to creator's GitHub page                                 | PASS        |
 
 
 ## Deployment
