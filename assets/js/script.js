@@ -36,7 +36,7 @@ header.addEventListener("click", () => {
     sadDog.classList.add("hide");
     userAnswerResult.classList.add("hide");
     //Refreshes the page when user decides to exit game. 
-    //Also eliminates previous users username in teh input field
+    //Also eliminates previous users username in the input field
     location.reload();
 });
 

@@ -118,6 +118,10 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
         ![Retake Quiz Button](docs/readme-images/retake-quiz-button.jpg)
     <br>
+* Footer
+    * Footer was created for this project. It contains copyright disclaimer and a link to creator's github page.
+
+    ![Footer](docs/readme-images/footer.jpg)
 
 ### Features to Implement
    * In the future, I would like to improve on this game by including a save score functionality and to be able to display high scores with their corresponding usernames.
@@ -133,9 +137,42 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 ## Testing
 ### Responsiveness
 Responsiveness was tested using Chrome DevTools and expected results were met.
+
+### Accessibility
+Accessibility of the website is of paramount importance that is why [Wave Accessibility](https://wave.webaim.org/) tool was used throughout the development, especially towards the final stages.
+
+The following criteria were met:
+* HTML page lang attribute was set.
+* Images have alternative texts set making descriptions dictateable to users.
+* Aria labels used and implemented correctly especially on buttons elements.
+* No skipped heading levels found ensuring importance of content is maintained.
+* Color contrasts meet a minimum ratio as specified in [WCAG 2.1 Contrast Guidelines](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
+* Conformance to WCAG 2.1 Coding best practices.
+
+Manual testing was also performed and found the following issues that were rectified accordingly:
+* Form label missing on input field. Username input required a label for more accessibility. Label added but made visually hidden for design purposes only. 
+
+![Code to visually hide input label](docs/readme-images/visually-hidden.jpg)
+
 ### Validator Testing
+* HTML and CSS files were tested and returned with no errors found. [W3C Validator](https://validator.w3.org/) and [CSS Validation Service](https://jigsaw.w3.org/css-validator/) were used respectively.
+
+![HTML Validator result](docs/readme-images/html-validator-check.jpg)
+![CSS Validator result](docs/readme-images/css-validator-check.jpg)
+
+* JavaScript code also passed through JShint with no issues.
+
+![JavaScript JShint result](docs/readme-images/javascript-jshint-check.jpg)
+
+
 ### Bugs
+* Page not refreshing and reloading properly when user exits quiz by clicking the header. The location.reload() method
+has been used fix this.
+
+![Reload Page](docs/readme-images/location-reload.jpg)
+
 ### Unfixed Bugs
+* There are no identified bugs to fix so far.
 
 ## Deployment
 ### Version Control
