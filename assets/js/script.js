@@ -61,8 +61,8 @@ username.addEventListener("keyup", () => {
 // Calls to start quiz
 startQuizButton.addEventListener("click", () => {
     // Checks input if empty
-    if (username.value=="null"||username.value=="undefined"||username.value.trim()=="") {
-        alert("Please type your name in the blue box provided.")
+    if (username.value == "null" || username.value == "undefined" || username.value.trim() == "") {
+        alert("Please type your name in the blue box provided.");
         return false;
     } else {
         startQuiz();
@@ -80,9 +80,9 @@ function startQuiz() {
     currentDogsFound.innerHTML = 0;
     dogsLost = 0;
     currentDogsLost.innerHTML = 0;
-    
+
     nextQuestionButton.innerHTML = "Hurry! Find more dogs!";
-    
+
     // Codes for which game page to display
     quizPage.classList.remove("hide");
     instructionsPage.classList.add("hide");
@@ -105,7 +105,7 @@ function displayQuestion() {
     nextQuestionButton.classList.add("hide");
     // Hides button that takes you back to instructions after playing quiz
     backToInstructions.classList.add("hide");
-    
+
     let currentQuestion = questions[questionsArrayIndex];
 
     // Displays current question

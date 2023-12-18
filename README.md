@@ -180,6 +180,7 @@ Manual testing was also performed and found the following issues that were recti
 ### Bugs
 * Page not refreshing and reloading properly when user exits quiz by clicking the header. The location.reload() method
 has been used fix this.
+* Input field accepting a blank space as username input and still allows user to enter quiz. Empty input check feature added and returns an error message if input is empty.
 
 ![Reload Page](docs/readme-images/location-reload.jpg)
 
