@@ -140,6 +140,15 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
 ![Page Not Found Image](docs/readme-images/404-page.jpg)
 
+## Design
+### Wireframes
+Balsamiq Wireframes was utilised in the design process of the quiz. 
+
+![Wireframe 1](docs/readme-images/wireframe-1.jpg)
+![Wireframe 2](docs/readme-images/wireframe-2.jpg)
+![Wireframe 3](docs/readme-images/wireframe-3.jpg)
+![Wireframe 4](docs/readme-images/wireframe-4.jpg)
+
 ## Testing
 ### Responsiveness
 Responsiveness was tested using mainly Chrome DevTools and expected results were met.
