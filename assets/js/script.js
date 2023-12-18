@@ -60,7 +60,14 @@ username.addEventListener("keyup", () => {
 
 // Calls to start quiz
 startQuizButton.addEventListener("click", () => {
-    startQuiz();
+    // Checks input if empty
+    if (username.value=="null"||username.value=="undefined"||username.value.trim()=="") {
+        alert("Please type your name in the blue box provided.")
+        return false;
+    } else {
+        startQuiz();
+        return true;
+    }
 });
 
 /**
