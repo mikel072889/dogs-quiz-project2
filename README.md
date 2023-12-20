@@ -37,11 +37,15 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
     * Username Input Field
         * This provides the user to enter their name so the quiz can be customised for them. 
-        * This is a mandatory field to enable to Start Quiz function. The input field is designed to accept
+        * This is a mandatory field to enable the Start Quiz function. The input field is designed to accept
         any text character, including numbers, as the user might not wish to divulge their real name or they might choose to use a different name.
         * It has a contrasting red color so users cannot miss it. It is clearly indicated in the instructions that users need to fill this input field up.
 
         ![Input field](docs/readme-images/input-field.jpg)
+
+        * An error message is displayed if the input field is not filled up. This input field will not accept spaces as username.
+     
+        ![Error Message](docs/readme-images/error-message.jpg)
 
 * Quiz Area
     * The quiz area is where all the fun is! This contains the individually displayed questions followed by their respective possible answers. This also features the "Dogs found" and "Dogs lost" score feature.
