@@ -25,16 +25,6 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
     ![Instructions](docs/readme-images/instructions.jpg)
 
-    * Start Quiz Button
-        * The start quiz button is not labelled "Start Quiz" for a reason. The button is labelled "Let's go find your dogs!" to add more consistency with the storyline.
-        * This button will take the user to the initial quiz question. 
-        * This is disabled by default and will only be enabled once user has entered name on the input field 
-        * It features the hover effect and changes background color and mouse pointer when hovered upon. This signals the user that they are about to start the quiz once button is clicked. 
-
-        ![Disabled Start Quiz Button](docs/readme-images/start-quiz-button-disabled.jpg)
-        <br>
-        ![Enabled Start Quiz Button](docs/readme-images/start-quiz-button-enabled.jpg)
-
     * Username Input Field
         * This provides the user to enter their name so the quiz can be customised for them. 
         * This is a mandatory field to enable the Start Quiz function. The input field is designed to accept
@@ -46,6 +36,16 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
         * An error message is displayed if the input field is not filled up. This input field will not accept spaces as username.
      
         ![Error Message](docs/readme-images/error-message.jpg)
+
+    * Start Quiz Button
+        * The start quiz button is not labelled "Start Quiz" for a reason. The button is labelled "Let's go find your dogs!" to add more consistency with the storyline.
+        * This button will take the user to the initial quiz question. 
+        * This is disabled by default and will only be enabled once user has entered name on the input field 
+        * It features the hover effect and changes background color and mouse pointer when hovered upon. This signals the user that they are about to start the quiz once button is clicked. 
+
+        ![Disabled Start Quiz Button](docs/readme-images/start-quiz-button-disabled.jpg)
+        <br>
+        ![Enabled Start Quiz Button](docs/readme-images/start-quiz-button-enabled.jpg)
 
 * Quiz Area
     * The quiz area is where all the fun is! This contains the individually displayed questions followed by their respective possible answers. This also features the "Dogs found" and "Dogs lost" score feature.
