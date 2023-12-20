@@ -54,7 +54,7 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
     * Dogs Found and Dogs Lost Scoring System 
         * "Dogs Found"  is where the number of correct answers will be shown and is expected to increment everytime the user clicks on the correct answer. On the other hand, "Dogs Lost" is where the number of wrong answers will be shown and is also expected to increment everytime user clicks on the wrong answer. 
-        * Contrary to the usual scoring label "Score", this are is labelled differently to provide consistency with the storyline.
+        * Contrary to the usual scoring label "Score", this area is labelled differently to provide consistency with the storyline.
 
         ![Scoring system](docs/readme-images/lost-found.jpg)
 
@@ -70,7 +70,7 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
 
             ![Hovered Button](docs/readme-images/hovered-button.jpg)
 
-            * Correct answer clicked - when the correct answer is clicked by the user, the background color of the correct answer changes to green and all button's hover effect is disabled limiting the user to choose other options once an option is clicked. The background color the the wrong answers also goes darker to put emphasis that these are the wrong answers. The correct answer background color is turned green to generate a positive feeling from the user.
+            * Correct answer clicked - when the correct answer is clicked by the user, the background color of the correct answer changes to green and all button's hover effect is disabled limiting the user to choose other options once an option is clicked. The background color of the wrong answers also goes darker to put emphasis that these are the wrong answers. The correct answer background color is turned green to generate a positive feeling from the user.
 
             ![Correct Answer Button](docs/readme-images/correct-answer.jpg)
 
@@ -123,7 +123,7 @@ The quiz can be accessed though this live site [here](https://mikel072889.github
         ![Retake Quiz Button](docs/readme-images/retake-quiz-button.jpg)
     <br>
 * Footer
-    * Footer was created for this project. It contains copyright disclaimer and a link to creator's github page.
+    * Footer was created for this project. It contains copyright disclaimer and a link to the creator's github page.
 
     ![Footer](docs/readme-images/footer.jpg)
 
@@ -198,7 +198,7 @@ has been used fix this.
 ![Reload Page](docs/readme-images/location-reload.jpg)
 
 ### Unfixed Bugs
-* When double-clicked, the answer/options button background color changes to red and remains red all throughout the quiz.
+* No unfixed bugs found so far.
 
 ### Functions Testing
 * Functions and features have been mainly tested on Google Chrome.  
@@ -209,6 +209,7 @@ has been used fix this.
 | ----------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------------------- | ----------- |
 | Input for username - mandatory to play quiz     | Add username in a form of text            | Disabled Start button gets enabled                                     | PASS        |
 |                                                 |                                           | Button text gets bolder and changes background color                   | PASS        |
+| Input Error Message                             | Enter space as an input                   | Error message to appear in the middle of the screen                    | PASS        |
 | Start Button/"Let's go find your dogs" Button   | Click                                     | Changes color on hover                                                 | PASS        |
 |                                                 |                                           | Main quiz page displayed                                               | PASS        |
 | Correct Answer Button                           | Click the correct answer                  | A comment and an image of a dancing dog appears                        | PASS        |
